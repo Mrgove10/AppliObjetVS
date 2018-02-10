@@ -11,6 +11,7 @@ Adresse::~Adresse()
 {
 }
 
+#pragma region Fonctions numero rue
 int Adresse::getNumeroRue()
 {
 	return _NumeroRue;
@@ -20,7 +21,9 @@ void Adresse::setNumeroRue(int NumeroRuePara)
 {
 	_NumeroRue = NumeroRuePara;
 }
+#pragma endregion
 
+#pragma region Fonctions rue
 string Adresse::getRue()
 {
 	return _Rue;
@@ -30,7 +33,9 @@ void Adresse::setRue(string RuePara)
 {
 	_Rue = RuePara;
 }
+#pragma endregion
 
+#pragma region Fonctions code postal
 string Adresse::getCodePostal()
 {
 	return _CodePostal;
@@ -40,6 +45,7 @@ void Adresse::setCodePostal(string CodePostalPara)
 {
 	_CodePostal = CodePostalPara;
 }
+#pragma endregion
 
 #pragma region Fonctions ville
 string Adresse::getVille()

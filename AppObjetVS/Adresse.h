@@ -25,7 +25,7 @@ public:
 	void setPays(string PaysPara);
 #pragma endregion
 
-#pragma region Declarations priver
+#pragma region Declarations privées
 private:
 	int _NumeroRue;
 	string _Rue;
