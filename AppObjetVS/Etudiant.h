@@ -24,11 +24,11 @@ public:
 	string getEMail();
 	void setEMail(string EMailPara);
 
-	int getDateNaissance();
-	void setDateNaissance(int DateNaissancePara);
+	string getDateNaissance();
+	void setDateNaissance(string DateNaissancePara);
 
-	int getPromo();
-	void setPromo(int PromoPara);
+	string getPromo();
+	void setPromo(string PromoPara);
 
 #pragma endregion
 
