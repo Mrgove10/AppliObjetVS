@@ -21,3 +21,8 @@ int Employe::getSocieteEmploye()
 {
 	return _SocieteEmploye;
 }
+void Employe::setSocieteEmploye(int SocieteEmployePara)
+{
+	_SocieteEmploye = SocieteEmployePara;
+}
+#pragma endregion
