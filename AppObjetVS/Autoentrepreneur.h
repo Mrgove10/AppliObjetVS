@@ -1,7 +1,8 @@
 #pragma once
 #include <iostream>
+#include "Adresse.h"
 using namespace std;
-
+class Adresse;
 class AutoEntrepreneur
 {
 #pragma region Declarations publiques
@@ -17,7 +18,7 @@ public:
 #pragma region Declarations privées
 private:
 	int _Sirens;
-	
+	Adresse* _Adresse;
 #pragma endregion
 };
 

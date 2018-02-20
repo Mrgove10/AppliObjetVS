@@ -3,9 +3,10 @@
 #include <vector>
 #include "ModuleCours.h"
 #include "Adresse.h"
+#include "Autoentrepreneur.h"
 using namespace std;
 class ModuleCours;
-class Adressse;
+class Adresse;
 class Prof
 {
 #pragma region Declarations publiques
@@ -51,6 +52,7 @@ private:
 	vector<ModuleCours*> _ModuleSEnseigner;
 	Adresse* _Adresse;
 	string m_casierJudiciare;
+	AutoEntrepreneur* _AutoEntrepreneur;
 
 #pragma endregion
 };
