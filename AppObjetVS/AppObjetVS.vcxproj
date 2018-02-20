@@ -151,6 +151,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Administration.h" />
     <ClInclude Include="Adresse.h" />
     <ClInclude Include="Etudiant.h" />
     <ClInclude Include="ModuleCours.h" />
@@ -159,6 +160,7 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Administration.cpp" />
     <ClCompile Include="Adresse.cpp" />
     <ClCompile Include="AppObjetVS.cpp" />
     <ClCompile Include="Etudiant.cpp" />

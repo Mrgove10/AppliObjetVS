@@ -1,6 +1,5 @@
 #pragma once
 #include <iostream>
-#include "Prof.h"
 #include <vector>
 using namespace std;
 class ModuleCours
@@ -23,13 +22,11 @@ public:
 	void setHeuresTotales(float HeuresTotalesPara);
 #pragma endregion 
 
-#pragma region Declarations publiques
+#pragma region Declarations privées
 private:
 	string _intitulerModule;
 	string _Facture;
 	string _ReleverModuleComplet;
 	float _HeuresEnseigner;
-	vector<Prof*> _enseigant;
-
 #pragma endregion 
 };

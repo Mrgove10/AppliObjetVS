@@ -2,9 +2,10 @@
 #include <iostream>
 #include <vector>
 #include "ModuleCours.h"
-
+#include "Adresse.h"
 using namespace std;
-
+class ModuleCours;
+class Adressse;
 class Prof
 {
 #pragma region Declarations publiques
@@ -47,7 +48,8 @@ private:
 	int m_telephone;
 	int m_dateNaissance;
 	int m_numCompteBancaire;
-	//vector<ModuleCours*> Prof
+	vector<ModuleCours*> _ModuleSEnseigner;
+	Adresse* _Adresse;
 	string m_casierJudiciare;
 
 #pragma endregion

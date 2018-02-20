@@ -1,7 +1,10 @@
 #pragma once
 #include <iostream>
+#include <vector>
+#include "ModuleCours.h"
+#include "Adresse.h"
 using namespace std;
-
+class Adresse;
 class Etudiant
 {
 #pragma region Declarations publiques
@@ -27,10 +30,6 @@ public:
 	int getPromo();
 	void setPromo(int PromoPara);
 
-	string ModulesEnOption();
-	void setModulesEnOption(string EMailPara);
-
-
 #pragma endregion
 
 #pragma region Declarations privées
@@ -41,7 +40,8 @@ private:
 	string _EMail;
 	string _DateNaissance;
 	string _Promo;
-	string _ModulesEnOption;
+	Adresse* _Adresse;
+	vector<ModuleCours*> Modules;
 #pragma endregion
 };
 	
