@@ -4,9 +4,11 @@
 #include "ModuleCours.h"
 #include "Adresse.h"
 #include "Autoentrepreneur.h"
+#include "Employe.h"
 using namespace std;
 class ModuleCours;
 class Adresse;
+class Employe;
 class Prof
 {
 #pragma region Declarations publiques
@@ -53,6 +55,7 @@ private:
 	Adresse* _Adresse;
 	string m_casierJudiciare;
 	AutoEntrepreneur* _AutoEntrepreneur;
+	Employe* _Employe;
 
 #pragma endregion
 };

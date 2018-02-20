@@ -1,5 +1,6 @@
 #pragma once
 #include <iostream>
+#include "Adresse.h"
 using namespace std;
 
 class Employe
@@ -17,6 +18,7 @@ public:
 #pragma region Declarations privées
 private:
 	int _SocieteEmploye;
+	Adresse* _AdresseSocieteEmploye;
 
 #pragma endregion
 };
