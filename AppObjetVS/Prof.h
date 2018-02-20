@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include "ModuleCours.h"
 
 using namespace std;
 
@@ -46,10 +47,9 @@ private:
 	int m_telephone;
 	int m_dateNaissance;
 	int m_numCompteBancaire;
-	//liste module
+	//vector<ModuleCours*> Prof
 	string m_casierJudiciare;
 
 #pragma endregion
-
 };
 
