@@ -21,3 +21,8 @@ int AutoEntrepreneur::getSirens()
 {
 	return _Sirens;
 }
+void AutoEntrepreneur::setSirens(int SirensPara)
+{
+	_Sirens = SirensPara;
+}
+#pragma endregion
