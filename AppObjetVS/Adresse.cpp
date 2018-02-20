@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "Adresse.h"
 
+#pragma region Constructeur / Destructeur
 
 Adresse::Adresse()
 {
@@ -11,7 +12,9 @@ Adresse::~Adresse()
 {
 }
 
-#pragma region Fonctions numero rue
+#pragma endregion 
+
+#pragma region Get/Set numero rue
 int Adresse::getNumeroRue()
 {
 	return _NumeroRue;
@@ -23,7 +26,7 @@ void Adresse::setNumeroRue(int NumeroRuePara)
 }
 #pragma endregion
 
-#pragma region Fonctions rue
+#pragma region Get/Set rue
 string Adresse::getRue()
 {
 	return _Rue;
@@ -35,7 +38,7 @@ void Adresse::setRue(string RuePara)
 }
 #pragma endregion
 
-#pragma region Fonctions code postal
+#pragma region Get/Set code postale
 string Adresse::getCodePostal()
 {
 	return _CodePostal;
@@ -47,7 +50,7 @@ void Adresse::setCodePostal(string CodePostalPara)
 }
 #pragma endregion
 
-#pragma region Fonctions ville
+#pragma region Get/Set ville
 string Adresse::getVille()
 {
 	return _Ville;
@@ -59,7 +62,7 @@ void Adresse::setVille(string VillePara)
 }
 #pragma endregion
 
-#pragma region Fonctions pays
+#pragma region Get/Set pays
 string Adresse::getPays()
 {
 	return _Pays;
@@ -70,4 +73,3 @@ void Adresse::setPays(string PaysPara)
 	_Pays = PaysPara;
 }
 #pragma endregion
-
