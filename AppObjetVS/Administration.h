@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include "Adresse.h"
 
 using namespace std;
 
@@ -71,6 +72,8 @@ private:
 	float m_salaire;
 	string m_dateVirementSalaire;
 	int m_congeRestant;
+
+	Adresse* _Adresse;
 
 };
 
