@@ -22,8 +22,8 @@ public:
 	int getTelephone();
 	void setTelephone(int telephonePara);
 
-	int getDateNaissance();
-	void setDateNaissance(int dateNaissancePara);
+	string getDateNaissance();
+	void setDateNaissance(string dateNaissancePara);
 
 	int getNumCompteBancaire();
 	void setNumCompteBancaire(int numCompteBancairePara);
@@ -46,11 +46,11 @@ public:
 	string getTypeDePoste();
 	void setTypeDePoste(string typeDePostePara);
 
-	int getSalaire();
-	void setSalaire(int salairePara);
+	float getSalaire();
+	void setSalaire(float salairePara);
 
-	int getDateVirementSalaire();
-	void setDateVirementSalaire(int dateVirementSalairePara);
+	string getDateVirementSalaire();
+	void setDateVirementSalaire(string dateVirementSalairePara);
 
 	int getCongeRestant();
 	void setCongeRestant(int congeRestantPara);
@@ -60,7 +60,7 @@ private:
 	string m_prenom;
 	string m_email;
 	int m_telephone;
-	int m_dateNaissance;
+	string m_dateNaissance;
 	int m_numCompteBancaire;
 	string m_emailPro;
 	int m_telFixPro;
@@ -68,8 +68,8 @@ private:
 	int m_horaires;
 	string m_contrat;
 	string m_typeDePoste;
-	int m_salaire;
-	int m_dateVirementSalaire;
+	float m_salaire;
+	string m_dateVirementSalaire;
 	int m_congeRestant;
 
 };

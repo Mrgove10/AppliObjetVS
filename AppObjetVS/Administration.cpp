@@ -51,12 +51,12 @@ void Administration::setTelephone(int telephonePara)
 	m_telephone = telephonePara;
 }
 
-int Administration::getDateNaissance()
+string Administration::getDateNaissance()
 {
 	return m_dateNaissance;
 }
 
-void Administration::setDateNaissance(int dateNaissancePara)
+void Administration::setDateNaissance(string dateNaissancePara)
 {
 	m_dateNaissance = dateNaissancePara;
 }
@@ -131,22 +131,22 @@ void Administration::setTypeDePoste(string typeDePostePara)
 	m_typeDePoste = typeDePostePara;
 }
 
-int Administration::getSalaire()
+float Administration::getSalaire()
 {
 	return m_salaire;
 }
 
-void Administration::setSalaire(int salairePara)
+void Administration::setSalaire(float salairePara)
 {
 	m_salaire = salairePara;
 }
 
-int Administration::getDateVirementSalaire()
+string Administration::getDateVirementSalaire()
 {
 	return m_dateVirementSalaire;
 }
 
-void Administration::setDateVirementSalaire(int dateVirementSalairePara)
+void Administration::setDateVirementSalaire(string dateVirementSalairePara)
 {
 	m_dateVirementSalaire = dateVirementSalairePara;
 }
