@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "Adresse.h"
 
+#pragma region Get/set
 
 Adresse::Adresse()
 {
@@ -10,6 +11,8 @@ Adresse::Adresse()
 Adresse::~Adresse()
 {
 }
+
+#pragma endregion 
 
 #pragma region Fonctions numero rue
 int Adresse::getNumeroRue()
@@ -35,7 +38,7 @@ void Adresse::setRue(string RuePara)
 }
 #pragma endregion
 
-#pragma region Fonctions code postal
+#pragma region Fonctions code postale
 string Adresse::getCodePostal()
 {
 	return _CodePostal;
