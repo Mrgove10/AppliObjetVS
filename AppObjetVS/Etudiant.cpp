@@ -11,8 +11,6 @@ Etudiant::Etudiant()
 Etudiant::~Etudiant()
 {
 }
-
-
 #pragma endregion 
 
 #pragma region Get/Set Nom
@@ -21,7 +19,7 @@ string Etudiant::getNom()
 	return _Nom;
 }
 
-void Etudiant::setNom(int NomPara)
+void Etudiant::setNom(string NomPara)
 {
 	_Nom = NomPara;
 }
@@ -40,12 +38,12 @@ void Etudiant::setPrenom(string PrenomPara)
 #pragma endregion
 
 #pragma region Get/Set Telephone
-string Etudiant::getTelephone()
+int Etudiant::getTelephone()
 {
 	return _Telephone;
 }
 
-void Etudiant::setTelephone(string TelephonePara)
+void Etudiant::setTelephone(int TelephonePara)
 {
 	_Telephone = TelephonePara;
 }
@@ -71,7 +69,7 @@ string Etudiant::getDateNaissance()
 
 void Etudiant::setDateNaissance(string DateNaissancePara)
 {
-	_DateNaissance = DateNaissance;
+	_DateNaissance = DateNaissancePara;
 }
 #pragma endregion
 
