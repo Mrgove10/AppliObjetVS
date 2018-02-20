@@ -11,8 +11,6 @@ AutoEntrepreneur::AutoEntrepreneur()
 AutoEntrepreneur::~AutoEntrepreneur()
 {
 }
-
-
 #pragma endregion 
 
 
@@ -21,3 +19,4 @@ int AutoEntrepreneur::getSirens()
 {
 	return _Sirens;
 }
+#pragma endregion 

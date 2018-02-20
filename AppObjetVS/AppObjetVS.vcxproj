@@ -153,6 +153,7 @@
   <ItemGroup>
     <ClInclude Include="Administration.h" />
     <ClInclude Include="Adresse.h" />
+    <ClInclude Include="Autoentrepreneur.h" />
     <ClInclude Include="Etudiant.h" />
     <ClInclude Include="ModuleCours.h" />
     <ClInclude Include="Prof.h" />
@@ -163,6 +164,7 @@
     <ClCompile Include="Administration.cpp" />
     <ClCompile Include="Adresse.cpp" />
     <ClCompile Include="AppObjetVS.cpp" />
+    <ClCompile Include="AutoEntrepreneur.cpp" />
     <ClCompile Include="Etudiant.cpp" />
     <ClCompile Include="ModuleCours.cpp" />
     <ClCompile Include="Prof.cpp" />
