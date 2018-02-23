@@ -8,6 +8,7 @@ class RelevéNotes
 {
 public:
 	RelevéNotes();
+	RelevéNotes(string appreciation, float moyenne);
 	~RelevéNotes();
 
 	string getAppreciation();

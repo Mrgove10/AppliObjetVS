@@ -3,6 +3,11 @@
 
 
 RelevéNotes::RelevéNotes(){}
+RelevéNotes::RelevéNotes(string appreciation, float moyenne)
+{
+	m_appeciation = appreciation;
+	m_moyenne = moyenne;
+}
 RelevéNotes::~RelevéNotes(){}
 
 string RelevéNotes::getAppreciation(){return m_appeciation;}

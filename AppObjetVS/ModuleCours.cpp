@@ -6,6 +6,14 @@ ModuleCours::ModuleCours()
 {
 }
 
+ModuleCours::ModuleCours(string intitule, string facture, int nbJourEnseignement)
+{
+	_intituleModule = intitule;
+	_facture = facture;
+	_heuresEnseignees = nbJourEnseignement;
+	
+}
+
 
 ModuleCours::~ModuleCours()
 {
@@ -13,40 +21,30 @@ ModuleCours::~ModuleCours()
 
 string ModuleCours::getIntituler()
 {
-	return _intitulerModule;
+	return _intituleModule;
 }
 
-void ModuleCours::setIntituler(string intitulerPara)
+void ModuleCours::setIntituler(string intitulePara)
 {
-	_intitulerModule = intitulerPara;
+	_intituleModule = intitulePara;
 }
 
 string ModuleCours::getFacture()
 {
-	return _Facture;
+	return _facture;
 }
 
-void ModuleCours::setfacture(string FacturePara)
+void ModuleCours::setfacture(string facturePara)
 {
-	_Facture = FacturePara;
-}
-
-string ModuleCours::getReleverModuleComplet()
-{
-	return _ReleverModuleComplet;
-}
-
-void ModuleCours::setReleverModuleComplet(string ReleverModuleCompletPara)
-{
-	_ReleverModuleComplet = ReleverModuleCompletPara;
+	_facture = facturePara;
 }
 
 float ModuleCours::getHeuresTotales()
 {
-	return _HeuresEnseigner;
+	return _heuresEnseignees;
 }
 
-void ModuleCours::setHeuresTotales(float HeuresTotalesPara)
+void ModuleCours::setHeuresTotales(float heuresTotalesPara)
 {
-	_HeuresEnseigner = HeuresTotalesPara;
+	_heuresEnseignees = heuresTotalesPara;
 }

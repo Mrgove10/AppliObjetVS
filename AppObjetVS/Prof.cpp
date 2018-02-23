@@ -6,6 +6,17 @@ Prof::Prof()
 {
 }
 
+Prof::Prof(string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string casierJudiciaire)
+{
+	m_nom = nom;
+	m_prenom = prenom;
+	m_email = email;
+	m_telephone = telephone;
+	m_dateNaissance = dateNaissance;
+	m_numCompteBancaire = numeroCompteBancaire;
+	m_casierJudiciare = casierJudiciaire;
+}
+
 
 Prof::~Prof()
 {
@@ -48,11 +59,11 @@ void Prof::setTelephone(int telephonePara)
 	m_telephone = telephonePara;
 }
 
-int Prof::getDateNaissance()
+string Prof::getDateNaissance()
 {
 	return m_dateNaissance;
 }
-void Prof::setDateNaissance(int dateNaissancePara)
+void Prof::setDateNaissance(string dateNaissancePara)
 {
 	m_dateNaissance = dateNaissancePara;
 }

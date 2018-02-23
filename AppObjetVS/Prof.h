@@ -9,11 +9,13 @@ using namespace std;
 class ModuleCours;
 class Adresse;
 class Employe;
+
 class Prof
 {
 #pragma region Declarations publiques
 public:
 	Prof();
+	Prof(string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string casierJudiciaire);
 	~Prof();
 
 	string getNom();
@@ -28,13 +30,11 @@ public:
 	int getTelephone();
 	void setTelephone(int telephonePara);
 
-	int getDateNaissance();
-	void setDateNaissance(int dateNaissancePara);
+	string getDateNaissance();
+	void setDateNaissance(string dateNaissancePara);
 
 	int getNumCompteBancaire();
 	void setNumCompteBancaire(int numCompteBancairePara);
-
-	//module?
 
 	string getCasierJudiciaire();
 	void setCasierJudiciare(string casierJudiciairePara);
@@ -49,10 +49,10 @@ private:
 	string m_prenom;
 	string m_email;
 	int m_telephone;
-	int m_dateNaissance;
+	string m_dateNaissance;
 	int m_numCompteBancaire;
-	vector<ModuleCours*> _ModuleSEnseigner;
-	Adresse* _Adresse;
+	vector<ModuleCours*> _moduleSEnseigner;
+	Adresse* _adresse;
 	string m_casierJudiciare;
 
 #pragma endregion

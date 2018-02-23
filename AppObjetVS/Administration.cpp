@@ -6,6 +6,25 @@ Administration::Administration()
 {
 }
 
+Administration::Administration(string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string emailPro, int telephoneFix, int telephoneMobile, float horaires, string contrat, string typeDePoste, float salaire, string dateVirementSalaire, int congeRestant)
+{
+	m_nom = nom;
+	m_prenom = prenom;
+	m_email = email;
+	m_telephone = telephone;
+	m_dateNaissance = dateNaissance;
+	m_numCompteBancaire = numeroCompteBancaire;
+	m_emailPro = emailPro;
+	m_telFixPro = telephoneFix;
+	m_telMobilePro = telephoneMobile;
+	m_horaires = horaires;
+	m_contrat = contrat;
+	m_typeDePoste = typeDePoste;
+	m_salaire = salaire;
+	m_dateVirementSalaire = dateVirementSalaire;
+	m_congeRestant = congeRestant;
+}
+
 
 Administration::~Administration()
 {

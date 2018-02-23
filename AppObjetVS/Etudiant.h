@@ -10,41 +10,53 @@ class Etudiant
 #pragma region Declarations publiques
 public:
 	Etudiant();
+	Etudiant(string nom, string prenom, int telephone, string email, string dateNaissance, int promo, string CV, float montantScolarité, string stageEntreprise);
 	~Etudiant();
 
 	string getNom();
-	void setNom(string NomPara);
+	void setNom(string nomPara);
 
 	string getPrenom();
-	void setPrenom(string PrenomPara);
+	void setPrenom(string prenomPara);
 
 	int getTelephone();
-	void setTelephone(int TelephonePara);
+	void setTelephone(int telephonePara);
 
 	string getEMail();
-	void setEMail(string EMailPara);
+	void setEMail(string emailPara);
 
 	string getDateNaissance();
-	void setDateNaissance(string DateNaissancePara);
+	void setDateNaissance(string dateNaissancePara);
 
 	string getPromo();
-	void setPromo(string PromoPara);
+	void setPromo(string promoPara);
+
+	string getCV();
+	void setCV(string CVPara);
+
+	float getMontantScolarite();
+	void setMontantScolarite(float montantScolaritePara);
+
+	string getStageEntreprise();
+	void setStageEntreprise(string stageEntreprisePara);
+
+	void resteAPayer();
 
 #pragma endregion
 
 #pragma region Declarations privées
 private:
-	string _Nom;
-	string _Prenom;
-	int _Telephone;
-	string _EMail;
-	string _DateNaissance;
-	string _Promo;
+	string _nom;
+	string _prenom;
+	int _telephone;
+	string _email;
+	string _dateNaissance;
+	string _promo;
 	string _CV;
 	float _montantScolarite;
 	string _stageEntreprise;
-	Adresse* _Adresse;
-	vector<ModuleCours*> Modules;
+	Adresse* _adresse;
+	vector<ModuleCours*> _modules;
 #pragma endregion
 };
 	

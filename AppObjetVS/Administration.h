@@ -9,6 +9,7 @@ class Administration
 {
 public:
 	Administration();
+	Administration(string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string emailPro, int telephoneFix, int telephoneMobile, float horaires, string contrat, string typeDePoste, float salaire, string dateVirementSalaire, int congeRestant);
 	~Administration();
 
 	string getNom();

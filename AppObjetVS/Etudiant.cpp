@@ -7,6 +7,18 @@ Etudiant::Etudiant()
 {
 }
 
+Etudiant::Etudiant(string nom, string prenom, int telephone, string email, string dateNaissance, int promo, string CV, float montantScolarité, string stageEntreprise)
+{
+	_nom = nom;
+	_prenom = prenom;
+	_telephone = telephone;
+	_email = email;
+	_dateNaissance = dateNaissance;
+	_promo = promo;
+	_CV = CV;
+	_montantScolarite = montantScolarité;
+	_stageEntreprise = stageEntreprise;
+}
 
 Etudiant::~Etudiant()
 {
@@ -16,71 +28,98 @@ Etudiant::~Etudiant()
 #pragma region Get/Set Nom
 string Etudiant::getNom()
 {
-	return _Nom;
+	return _nom;
 }
 
-void Etudiant::setNom(string NomPara)
+void Etudiant::setNom(string nomPara)
 {
-	_Nom = NomPara;
+	_nom = nomPara;
 }
 #pragma endregion
 
 #pragma region Get/Set Prenom
 string Etudiant::getPrenom()
 {
-	return _Prenom;
+	return _prenom;
 }
 
-void Etudiant::setPrenom(string PrenomPara)
+void Etudiant::setPrenom(string prenomPara)
 {
-	_Prenom = PrenomPara;
+	_prenom = prenomPara;
 }
 #pragma endregion
 
 #pragma region Get/Set Telephone
 int Etudiant::getTelephone()
 {
-	return _Telephone;
+	return _telephone;
 }
 
-void Etudiant::setTelephone(int TelephonePara)
+void Etudiant::setTelephone(int telephonePara)
 {
-	_Telephone = TelephonePara;
+	_telephone = telephonePara;
 }
 #pragma endregion
 
 #pragma region Get/Set EMail
 string Etudiant::getEMail()
 {
-	return _EMail;
+	return _email;
 }
 
-void Etudiant::setEMail(string EMailPara)
+void Etudiant::setEMail(string emailPara)
 {
-	_EMail = EMailPara;
+	_email = emailPara;
 }
 #pragma endregion
 
 #pragma region Get/Set DateNaissance
 string Etudiant::getDateNaissance()
 {
-	return _DateNaissance;
+	return _dateNaissance;
 }
 
-void Etudiant::setDateNaissance(string DateNaissancePara)
+void Etudiant::setDateNaissance(string dateNaissancePara)
 {
-	_DateNaissance = DateNaissancePara;
+	_dateNaissance = dateNaissancePara;
 }
 #pragma endregion
 
 #pragma region Get/Set Promo
 string Etudiant::getPromo()
 {
-	return _Promo;
+	return _promo;
 }
 
-void Etudiant::setPromo(string PromoPara)
+void Etudiant::setPromo(string promoPara)
 {
-	_Promo = PromoPara;
+	_promo = promoPara;
+}
+string Etudiant::getCV()
+{
+	return _CV;
+}
+void Etudiant::setCV(string CVPara)
+{
+	_CV = CVPara;
+}
+float Etudiant::getMontantScolarite()
+{
+	return _montantScolarite;
+}
+void Etudiant::setMontantScolarite(float montantScolaritePara)
+{
+	_montantScolarite = montantScolaritePara;
+}
+string Etudiant::getStageEntreprise()
+{
+	return _stageEntreprise;
+}
+void Etudiant::setStageEntreprise(string stageEntreprisePara)
+{
+	_stageEntreprise = stageEntreprisePara;
+}
+void Etudiant::resteAPayer()
+{
 }
 #pragma endregion

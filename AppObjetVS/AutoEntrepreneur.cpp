@@ -7,6 +7,11 @@ AutoEntrepreneur::AutoEntrepreneur()
 {
 }
 
+AutoEntrepreneur::AutoEntrepreneur(string siren)
+{
+	_sirens = siren;
+}
+
 
 AutoEntrepreneur::~AutoEntrepreneur()
 {
@@ -15,12 +20,12 @@ AutoEntrepreneur::~AutoEntrepreneur()
 
 
 #pragma region Get/Set Sirens
-int AutoEntrepreneur::getSirens()
+string AutoEntrepreneur::getSirens()
 {
-	return _Sirens;
+	return _sirens;
 }
-void AutoEntrepreneur::setSirens(int SirensPara)
+void AutoEntrepreneur::setSirens(string sirensPara)
 {
-	_Sirens = SirensPara;
+	_sirens = sirensPara;
 }
 #pragma endregion

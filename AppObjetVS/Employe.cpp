@@ -7,6 +7,11 @@ Employe::Employe()
 {
 }
 
+Employe::Employe(string societeEmploye)
+{
+	_societeEmploye = societeEmploye;
+}
+
 
 Employe::~Employe()
 {
@@ -17,12 +22,12 @@ Employe::~Employe()
 
 
 #pragma region Get/Set Sirens
-int Employe::getSocieteEmploye()
+string Employe::getSocieteEmploye()
 {
-	return _SocieteEmploye;
+	return _societeEmploye;
 }
-void Employe::setSocieteEmploye(int SocieteEmployePara)
+void Employe::setSocieteEmploye(string societeEmployePara)
 {
-	_SocieteEmploye = SocieteEmployePara;
+	_societeEmploye = societeEmployePara;
 }
 #pragma endregion
