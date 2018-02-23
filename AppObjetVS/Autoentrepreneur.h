@@ -3,7 +3,7 @@
 #include "Adresse.h"
 using namespace std;
 class Adresse;
-class AutoEntrepreneur
+class AutoEntrepreneur : public Prof
 {
 #pragma region Declarations publiques
 public:
