@@ -7,6 +7,7 @@ class Adresse
 #pragma region Declarations publiques
 public:
 	Adresse();
+	Adresse(int numeroRue, string rue, string codePostal, string Ville, string pays);
 	~Adresse();
 
 	int getNumeroRue();

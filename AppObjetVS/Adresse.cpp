@@ -7,6 +7,14 @@ Adresse::Adresse()
 {
 }
 
+Adresse::Adresse(int numeroRue, string rue, string codePostal, string Ville, string pays)
+{
+	_NumeroRue = numeroRue;
+	_Rue = rue;
+	_CodePostal = codePostal;
+	_Pays = pays;
+}
+
 
 Adresse::~Adresse()
 {
