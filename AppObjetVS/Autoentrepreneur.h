@@ -4,6 +4,7 @@
 #include "Prof.h"
 using namespace std;
 class Adresse;
+class Prof;
 class AutoEntrepreneur : public Prof
 {
 #pragma region Declarations publiques
