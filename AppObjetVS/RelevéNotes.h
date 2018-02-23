@@ -3,7 +3,8 @@
 #include "ModuleCours.h"
 #include "Etudiant.h"
 using namespace std;
-
+class Etudiant;
+class ModuleCours;
 class RelevéNotes
 {
 public:

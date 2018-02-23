@@ -3,7 +3,8 @@
 #include "Adresse.h"
 #include "Prof.h"
 using namespace std;
-
+class Prof;
+class Adresse;
 class Employe : public Prof
 {
 #pragma region Declarations publiques

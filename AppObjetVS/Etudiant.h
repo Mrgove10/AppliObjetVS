@@ -5,6 +5,7 @@
 #include "Adresse.h"
 using namespace std;
 class Adresse;
+class ModuleCours;
 class Etudiant
 {
 #pragma region Declarations publiques

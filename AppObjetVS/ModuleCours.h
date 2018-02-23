@@ -2,7 +2,9 @@
 #include <iostream>
 #include <vector>
 #include "RelevéNotes.h"
+#include "RelevéNotes.h"
 using namespace std;
+class RelevéNotes;
 class ModuleCours
 {
 #pragma region Declarations publiques
