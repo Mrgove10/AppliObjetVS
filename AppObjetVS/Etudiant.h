@@ -40,6 +40,9 @@ private:
 	string _EMail;
 	string _DateNaissance;
 	string _Promo;
+	string _CV;
+	float _montantScolarite;
+	string _stageEntreprise;
 	Adresse* _Adresse;
 	vector<ModuleCours*> Modules;
 #pragma endregion

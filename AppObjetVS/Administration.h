@@ -73,7 +73,10 @@ private:
 	string m_dateVirementSalaire;
 	int m_congeRestant;
 
-	Adresse* _Adresse;
+	Adresse* m_assistantDirection;
+	Adresse* m_responsableEnseignement;
+	Adresse* m_responsableEntreprise;
+	Adresse* m_directeur;
 
 };
 
