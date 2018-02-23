@@ -988,7 +988,7 @@
 											"height": 13,
 											"autoResize": false,
 											"underline": false,
-											"text": "Eleve",
+											"text": "Etudiant",
 											"horizontalAlignment": 2,
 											"verticalAlignment": 5,
 											"wordWrap": false
@@ -10736,7 +10736,7 @@
 					"_parent": {
 						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
 					},
-					"name": "Eleve",
+					"name": "Etudiant",
 					"ownedElements": [
 						{
 							"_type": "UMLAssociation",

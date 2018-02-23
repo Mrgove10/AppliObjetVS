@@ -54,8 +54,6 @@ private:
 	vector<ModuleCours*> _ModuleSEnseigner;
 	Adresse* _Adresse;
 	string m_casierJudiciare;
-	AutoEntrepreneur* _AutoEntrepreneur;
-	Employe* _Employe;
 
 #pragma endregion
 };
