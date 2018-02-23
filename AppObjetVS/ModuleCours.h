@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <vector>
+#include "RelevéNotes.h"
 using namespace std;
 class ModuleCours
 {
@@ -28,5 +29,6 @@ private:
 	string _Facture;
 	string _ReleverModuleComplet;
 	float _HeuresEnseigner;
+	vector<RelevéNotes*> _notesClasse;
 #pragma endregion 
 };
