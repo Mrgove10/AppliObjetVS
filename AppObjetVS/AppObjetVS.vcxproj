@@ -165,7 +165,7 @@
   <ItemGroup>
     <ClCompile Include="Administration.cpp" />
     <ClCompile Include="Adresse.cpp" />
-    <ClCompile Include="AppObjetVS.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="AutoEntrepreneur.cpp" />
     <ClCompile Include="Employe.cpp" />
     <ClCompile Include="Etudiant.cpp" />
