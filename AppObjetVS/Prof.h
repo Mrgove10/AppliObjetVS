@@ -3,8 +3,6 @@
 #include <vector>
 #include "ModuleCours.h"
 #include "Adresse.h"
-#include "Autoentrepreneur.h"
-#include "Employe.h"
 using namespace std;
 class ModuleCours;
 class Adresse;
