@@ -8,8 +8,13 @@ int main(int argc, char *argv[])
    /* MainWindow w;
     w.show();*/
 
-    QPushButton bouton("Salut les Zéros, la forme ?");
+    QWidget fenetre;
+    fenetre.setFixedSize(300, 150);
+
+    QPushButton bouton("Salut les Zéros, la forme ?", &fenetre);
     bouton.show();
+    bouton.setCursor(Qt::PointingHandCursor);
+    bouton.move(60, 50);
 
     return a.exec();
 }
