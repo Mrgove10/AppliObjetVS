@@ -5,9 +5,9 @@
 TEMPLATE = app
 TARGET = AppObjetQT
 DESTDIR = ../x64/Debug
-QT += core xml sql gui svg multimedia uitools widgets printsupport winextras quickwidgets quick multimediawidgets quickcontrols2
-CONFIG += qtestlib debug
-DEFINES += _UNICODE WIN64 QT_DLL QT_MULTIMEDIA_LIB QT_MULTIMEDIAWIDGETS_LIB QT_PRINTSUPPORT_LIB QT_QUICK_LIB QT_QUICKWIDGETS_LIB QT_QUICKCONTROLS2_LIB QT_SQL_LIB QT_SVG_LIB QT_TESTLIB_LIB QT_UITOOLS_LIB QT_WIDGETS_LIB QT_WINEXTRAS_LIB QT_XML_LIB
+QT += core xml sql network gui svg xmlpatterns multimedia uitools widgets qml printsupport webchannel websockets winextras quickwidgets quick multimediawidgets qmltest quickcontrols2
+CONFIG += qtestlib help debug
+DEFINES += _UNICODE WIN64 QT_DLL QT_HELP_LIB QT_MULTIMEDIA_LIB QT_MULTIMEDIAWIDGETS_LIB QT_NETWORK_LIB QT_PRINTSUPPORT_LIB QT_QML_LIB QT_QUICK_LIB QT_QUICKWIDGETS_LIB QT_QUICKCONTROLS2_LIB QT_QMLTEST_LIB QT_SQL_LIB QT_SVG_LIB QT_TESTLIB_LIB QT_UITOOLS_LIB QT_WEBCHANNEL_LIB QT_WEBSOCKETS_LIB QT_WIDGETS_LIB QT_WINEXTRAS_LIB QT_XML_LIB QT_XMLPATTERNS_LIB
 INCLUDEPATH += ./GeneratedFiles \
     . \
     ./GeneratedFiles/$(ConfigurationName)
@@ -16,4 +16,8 @@ MOC_DIR += ./GeneratedFiles/$(ConfigurationName)
 OBJECTS_DIR += debug
 UI_DIR += ./GeneratedFiles
 RCC_DIR += ./GeneratedFiles
-include(AppObjetQT.pri)
+HEADERS += ./AppObjetQT.h
+SOURCES += ./main.cpp \
+    ./AppObjetQT.cpp
+FORMS += ./AppObjetQT.ui
+RESOURCES += AppObjetQT.qrc
