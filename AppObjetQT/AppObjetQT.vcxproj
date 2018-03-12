@@ -185,8 +185,16 @@
     </QtUic>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Administration.cpp" />
+    <ClCompile Include="Adresse.cpp" />
+    <ClCompile Include="AutoEntrepreneur.cpp" />
+    <ClCompile Include="Employe.cpp" />
+    <ClCompile Include="Etudiant.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="ModuleCours.cpp" />
+    <ClCompile Include="Prof.cpp" />
+    <ClCompile Include="RelevéNotes.cpp" />
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -213,6 +221,17 @@
   <ItemGroup>
     <QtUic Include="mainwindow.ui">
     </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Administration.h" />
+    <ClInclude Include="Adresse.h" />
+    <ClInclude Include="Autoentrepreneur.h" />
+    <ClInclude Include="Employe.h" />
+    <ClInclude Include="Etudiant.h" />
+    <ClInclude Include="ModuleCours.h" />
+    <ClInclude Include="Prof.h" />
+    <ClInclude Include="RelevéNotes.h" />
+    <ClInclude Include="targetver.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

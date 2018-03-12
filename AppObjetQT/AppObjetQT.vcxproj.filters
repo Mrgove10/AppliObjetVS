@@ -43,6 +43,30 @@
     <ClCompile Include="mainwindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Adresse.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoEntrepreneur.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Employe.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Etudiant.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleCours.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Prof.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RelevéNotes.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Administration.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
@@ -50,19 +74,45 @@
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
-    
-    
     <CustomBuild Include="debug\moc_predefs.h.cbt">
       <Filter>Generated Files</Filter>
     </CustomBuild>
     <CustomBuild Include="release\moc_predefs.h.cbt">
       <Filter>Generated Files</Filter>
     </CustomBuild>
-    
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="mainwindow.ui">
       <Filter>Form Files</Filter>
     </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Adresse.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Autoentrepreneur.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Employe.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Etudiant.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleCours.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Prof.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RelevéNotes.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Administration.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
