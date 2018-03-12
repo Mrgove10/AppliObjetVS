@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AppObjetQTClass</class>
- <widget class="QMainWindow" name="AppObjetQTClass">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>937</width>
-    <height>635</height>
+    <width>400</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>AppObjetQT</string>
+   <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QTabWidget" name="tabWidget">
@@ -26,11 +26,11 @@
     <property name="currentIndex">
      <number>0</number>
     </property>
-    <widget class="QWidget" name="tab">
+    <widget class="QWidget" name="tab_4">
      <attribute name="title">
       <string>Etudiants</string>
      </attribute>
-     <widget class="QTableView" name="tableView">
+     <widget class="QTableView" name="tableView_2">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -40,7 +40,7 @@
        </rect>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="pushButton_2">
       <property name="geometry">
        <rect>
         <x>699</x>
@@ -54,12 +54,12 @@
       </property>
      </widget>
     </widget>
-    <widget class="QWidget" name="tab_3">
+    <widget class="QWidget" name="tab_5">
      <attribute name="title">
       <string>Professeures</string>
      </attribute>
     </widget>
-    <widget class="QWidget" name="tab_2">
+    <widget class="QWidget" name="tab_6">
      <attribute name="title">
       <string>Admininstration</string>
      </attribute>
@@ -71,7 +71,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>937</width>
+     <width>400</width>
      <height>25</height>
     </rect>
    </property>

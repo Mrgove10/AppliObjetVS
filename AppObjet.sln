@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppObjetVS", "AppObjetVS\AppObjetVS.vcxproj", "{251CAD67-6A55-47BF-BA35-0D38C6C853CC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppObjetQT", "AppObjetQT\AppObjetQT.vcxproj", "{B12702AD-ABFB-343A-A199-8E24837244A3}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppObjetQT", "AppObjetQT\AppObjetQT.vcxproj", "{4CB64224-9D26-370A-98BF-21E4A3D80BA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,14 +27,14 @@ Global
 		{251CAD67-6A55-47BF-BA35-0D38C6C853CC}.Release|x64.Build.0 = Release|x64
 		{251CAD67-6A55-47BF-BA35-0D38C6C853CC}.Release|x86.ActiveCfg = Release|Win32
 		{251CAD67-6A55-47BF-BA35-0D38C6C853CC}.Release|x86.Build.0 = Release|Win32
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|ARM.ActiveCfg = Debug|x64
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.ActiveCfg = Debug|x64
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x64.Build.0 = Debug|x64
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.Debug|x86.ActiveCfg = Debug|x64
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|ARM.ActiveCfg = Release|x64
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.ActiveCfg = Release|x64
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x64.Build.0 = Release|x64
-		{B12702AD-ABFB-343A-A199-8E24837244A3}.Release|x86.ActiveCfg = Release|x64
+		{4CB64224-9D26-370A-98BF-21E4A3D80BA3}.Debug|ARM.ActiveCfg = Debug|x64
+		{4CB64224-9D26-370A-98BF-21E4A3D80BA3}.Debug|x64.ActiveCfg = Debug|x64
+		{4CB64224-9D26-370A-98BF-21E4A3D80BA3}.Debug|x64.Build.0 = Debug|x64
+		{4CB64224-9D26-370A-98BF-21E4A3D80BA3}.Debug|x86.ActiveCfg = Debug|x64
+		{4CB64224-9D26-370A-98BF-21E4A3D80BA3}.Release|ARM.ActiveCfg = Release|x64
+		{4CB64224-9D26-370A-98BF-21E4A3D80BA3}.Release|x64.ActiveCfg = Release|x64
+		{4CB64224-9D26-370A-98BF-21E4A3D80BA3}.Release|x64.Build.0 = Release|x64
+		{4CB64224-9D26-370A-98BF-21E4A3D80BA3}.Release|x86.ActiveCfg = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
