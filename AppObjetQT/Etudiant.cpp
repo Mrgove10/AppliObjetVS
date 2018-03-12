@@ -7,7 +7,14 @@ Etudiant::Etudiant()
 {
 }
 
-Etudiant::Etudiant(string nom, string prenom, int telephone, string email, string dateNaissance, int promo, string CV, float montantScolarité, string stageEntreprise)
+Etudiant::Etudiant(string nom)
+{
+	_nom = nom;
+}
+
+Etudiant::Etudiant(string nom, string prenom, int telephone, string email, 
+	string dateNaissance, int promo, string CV,
+	float montantScolarite, string stageEntreprise)
 {
 	_nom = nom;
 	_prenom = prenom;
@@ -16,7 +23,7 @@ Etudiant::Etudiant(string nom, string prenom, int telephone, string email, strin
 	_dateNaissance = dateNaissance;
 	_promo = promo;
 	_CV = CV;
-	_montantScolarite = montantScolarité;
+	_montantScolarite = montantScolarite;
 	_stageEntreprise = stageEntreprise;
 }
 

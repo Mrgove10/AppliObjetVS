@@ -11,6 +11,7 @@ class Etudiant
 #pragma region Declarations publiques
 public:
 	Etudiant();
+	Etudiant(string nom);
 	Etudiant(string nom, string prenom, int telephone, string email, string dateNaissance, int promo, string CV, float montantScolarité, string stageEntreprise);
 	~Etudiant();
 
