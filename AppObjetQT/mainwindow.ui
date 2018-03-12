@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>671</width>
-    <height>658</height>
+    <width>942</width>
+    <height>665</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,12 +19,12 @@
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>641</width>
+      <width>871</width>
       <height>581</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -34,7 +34,7 @@
       <property name="geometry">
        <rect>
         <x>180</x>
-        <y>380</y>
+        <y>410</y>
         <width>311</width>
         <height>25</height>
        </rect>
@@ -49,7 +49,7 @@
         <x>10</x>
         <y>10</y>
         <width>471</width>
-        <height>291</height>
+        <height>361</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
@@ -237,6 +237,22 @@
        </item>
       </layout>
      </widget>
+     <widget class="QLabel" name="label_32">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>10</y>
+        <width>301</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>C:/Users/Utilisateur/Pictures/Université.jpg</pixmap>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_5">
      <attribute name="title">
@@ -248,7 +264,7 @@
         <x>10</x>
         <y>10</y>
         <width>471</width>
-        <height>231</height>
+        <height>281</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
@@ -395,14 +411,30 @@
      <widget class="QPushButton" name="profAjout">
       <property name="geometry">
        <rect>
-        <x>240</x>
-        <y>360</y>
-        <width>241</width>
+        <x>340</x>
+        <y>350</y>
+        <width>331</width>
         <height>28</height>
        </rect>
       </property>
       <property name="text">
        <string>Ajout Professeur</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>10</y>
+        <width>351</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>C:/Users/Utilisateur/Pictures/Coaching 5.jpg</pixmap>
       </property>
      </widget>
     </widget>
@@ -728,6 +760,22 @@
        <string>Ajout Administration</string>
       </property>
      </widget>
+     <widget class="QLabel" name="label_34">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>40</y>
+        <width>291</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>C:/Users/Utilisateur/Pictures/admin_v01D_support.png</pixmap>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -736,7 +784,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>671</width>
+     <width>942</width>
      <height>26</height>
     </rect>
    </property>
