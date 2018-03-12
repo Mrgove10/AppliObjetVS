@@ -28,7 +28,7 @@
     </property>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
-      <string>Etudiants</string>
+      <string>Etudiant</string>
      </attribute>
      <widget class="QTableView" name="tableView_2">
       <property name="geometry">
@@ -56,7 +56,7 @@
     </widget>
     <widget class="QWidget" name="tab_5">
      <attribute name="title">
-      <string>Professeures</string>
+      <string>Professeur</string>
      </attribute>
     </widget>
     <widget class="QWidget" name="tab_6">
@@ -72,7 +72,7 @@
      <x>0</x>
      <y>0</y>
      <width>400</width>
-     <height>25</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
