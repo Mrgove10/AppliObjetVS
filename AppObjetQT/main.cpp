@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 }
 
 
-void SQL(){
+/*void SQL(){
     QString connectionString = "Driver={ODBC Driver 13 for SQL Server};"
                                "Server=tcp:appobjet.database.windows.net,1433;"
                                "Database=Appobjet;"
@@ -38,4 +38,4 @@ void SQL(){
         //return false;
         cout << false<<endl;
     }
-}
+}*/
