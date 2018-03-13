@@ -14,7 +14,6 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
 	~MainWindow();
-	void SQL();
 
 private slots:
     void on_etudiantAjout_clicked();

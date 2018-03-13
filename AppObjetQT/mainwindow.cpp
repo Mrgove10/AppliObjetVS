@@ -6,6 +6,7 @@
 #include <QLineEdit>
 #include <iostream>
 #include <QtSql/QtSql>
+#include <QDebug>
 #include <QCoreApplication>
 using namespace std;
 MainWindow::MainWindow(QWidget *parent) :
@@ -67,28 +68,7 @@ void MainWindow::on_adminAjout_clicked()
         ui->adminCongeRestant->text().toInt());
 }
 
-void MainWindow::SQL() {
-	#define q2c(string) string.toStdString()
-
-
-    QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
-    db.setHostName("localhost");
-    db.setUserName("root");
-    db.setPassword("");
-    db.setDatabaseName("tuto");
-    if(db.open())
-    {
-        std::cout << "Vous êtes maintenant connecté à " << q2c(db.hostName()) << std::endl;
-        db.close();
-    }
-    else
-    {
-        std::cout << "La connexion a échouée, désolé" << std::endl;
-    }
-
-}
-
 void MainWindow::on_pushButton_clicked()
 {
-    SQL();
+    
 }

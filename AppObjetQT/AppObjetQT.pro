@@ -4,8 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-QT += sql
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -33,3 +32,10 @@ HEADERS += \
 
 FORMS += \
         mainwindow.ui
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/debug/lib/ -llibmysql
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/debug/lib/ -llibmysqld
+else:unix: LIBS += -L$$PWD/debug/lib/ -llibmysql
+
+INCLUDEPATH += $$PWD/debug
+DEPENDPATH += $$PWD/debug
