@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include <QApplication>
 #include <QtSql/QtSql>
+#include <QDebug>
 #include <iostream>
 using namespace std;
 int main(int argc, char *argv[])
@@ -18,13 +19,13 @@ int main(int argc, char *argv[])
 
 	if (db.open())
 	{
-		//std::cout << "Vous êtes maintenant connecté à " << db.hostName().toStdString() << std::endl;
+		std::cout << "Vous êtes maintenant connecté à " << db.hostName().toStdString() << std::endl;
 		db.close();
 	}
 	else
 	{
 		//QDebug() <<"problem";
-		//std::cout << "La connexion a échouée, désolé" << std::endl;
+		std::cout << "La connexion a échouée, désolé" << std::endl;
 	}
     return a.exec();
 
