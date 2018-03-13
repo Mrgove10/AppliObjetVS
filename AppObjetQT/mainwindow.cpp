@@ -5,7 +5,7 @@
 #include "Administration.h"
 #include <QLineEdit>
 #include <iostream>
-
+#include <QtSql/QtSql>
 using namespace std;
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -64,4 +64,19 @@ void MainWindow::on_adminAjout_clicked()
         ui->adminSalaire->text().toFloat(),
         ui->adminDateVirementSalaire->text().toStdString(),
         ui->adminCongeRestant->text().toInt());
+}
+
+void MainWindow::SQL() {
+	QSqlDatabase db = QSqlDatabase::addDatabase("QMYSQL");
+	db.setHostName("bigblue");
+	db.setDatabaseName("flightdb");
+	db.setUserName("acarlson");
+	db.setPassword("1uTbSbAs");
+	bool ok = db.open();
+	QSqlDatabase firstDB = QSqlDatabase::addDatabase("QMYSQL", "first");	
+}
+
+void MainWindow::on_pushButton_clicked()
+{
+    SQL();
 }

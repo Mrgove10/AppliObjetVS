@@ -110,6 +110,7 @@ public:
     QLineEdit *profNumCompteBancaire;
     QPushButton *profAjout;
     QLabel *label_33;
+    QPushButton *pushButton;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -118,7 +119,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(942, 665);
+        MainWindow->resize(1022, 654);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
@@ -313,7 +314,7 @@ public:
 
         adminAjout = new QPushButton(tab_6);
         adminAjout->setObjectName(QStringLiteral("adminAjout"));
-        adminAjout->setGeometry(QRect(250, 520, 201, 28));
+        adminAjout->setGeometry(QRect(260, 520, 191, 28));
         label_34 = new QLabel(tab_6);
         label_34->setObjectName(QStringLiteral("label_34"));
         label_34->setGeometry(QRect(510, 40, 291, 401));
@@ -527,16 +528,19 @@ public:
 
         profAjout = new QPushButton(tab_5);
         profAjout->setObjectName(QStringLiteral("profAjout"));
-        profAjout->setGeometry(QRect(340, 350, 331, 28));
+        profAjout->setGeometry(QRect(240, 340, 241, 28));
         label_33 = new QLabel(tab_5);
         label_33->setObjectName(QStringLiteral("label_33"));
         label_33->setGeometry(QRect(490, 10, 351, 281));
         label_33->setPixmap(QPixmap(QString::fromUtf8("C:/Users/Utilisateur/Pictures/Coaching 5.jpg")));
         tabWidget->addTab(tab_5, QString());
+        pushButton = new QPushButton(centralWidget);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(870, 30, 80, 25));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 942, 26));
+        menuBar->setGeometry(QRect(0, 0, 1022, 25));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -547,7 +551,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -606,6 +610,7 @@ public:
         profAjout->setText(QApplication::translate("MainWindow", "Ajout Professeur", nullptr));
         label_33->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "Professeur", nullptr));
+        pushButton->setText(QApplication::translate("MainWindow", "connect to db", nullptr));
     } // retranslateUi
 
 };
