@@ -5,7 +5,7 @@
 #include "Administration.h"
 #include <QLineEdit>
 #include <iostream>
-#include <QtSql/QtSql>
+#include <QtSql>
 #include <QDebug>
 #include <QCoreApplication>
 using namespace std;
