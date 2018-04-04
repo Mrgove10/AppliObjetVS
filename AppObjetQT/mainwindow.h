@@ -2,7 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include<iostream>
+using namespace std;
 namespace Ui {
 class MainWindow;
 }
@@ -26,6 +27,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
+    void createCSV(string param,string param2);
 };
 
 #endif // MAINWINDOW_H

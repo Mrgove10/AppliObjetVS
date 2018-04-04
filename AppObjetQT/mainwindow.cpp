@@ -8,6 +8,9 @@
 #include <QtSql>
 #include <QDebug>
 #include <QCoreApplication>
+#include <QFileDialog>
+#include <fstream>
+
 using namespace std;
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -50,6 +53,7 @@ void MainWindow::on_profAjout_clicked()
 
 void MainWindow::on_adminAjout_clicked()
 {
+	string hello1;
     Administration* AdminActuel = new Administration(
         ui->adminNom->text().toStdString(),
         ui->adminPrenom->text().toStdString(),
@@ -66,9 +70,20 @@ void MainWindow::on_adminAjout_clicked()
         ui->adminSalaire->text().toFloat(),
         ui->adminDateVirementSalaire->text().toStdString(),
         ui->adminCongeRestant->text().toInt());
+		createCSV(AdminActuel->getNom(), AdminActuel->getPrenom());
 }
 
 void MainWindow::on_pushButton_clicked()
 {
-    
+	
+}
+
+void MainWindow::createCSV(string param, string param2)
+{
+	ofstream myfile;
+	myfile.open("test.csv");
+	myfile << "Nom,Prenom";
+	myfile << '\n';
+	myfile << param <<','<< param2;
+	myfile.close();
 }
