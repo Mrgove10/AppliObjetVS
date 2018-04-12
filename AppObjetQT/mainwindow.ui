@@ -364,6 +364,16 @@
        <pixmap>C:/Users/Utilisateur/Pictures/admin_v01D_support.png</pixmap>
       </property>
      </widget>
+     <widget class="QTextEdit" name="AdminListTextEdit">
+      <property name="geometry">
+       <rect>
+        <x>520</x>
+        <y>40</y>
+        <width>281</width>
+        <height>281</height>
+       </rect>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
@@ -778,19 +788,6 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QPushButton" name="pushButton">
-    <property name="geometry">
-     <rect>
-      <x>870</x>
-      <y>30</y>
-      <width>80</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>connect to db</string>
-    </property>
-   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -798,7 +795,7 @@
      <x>0</x>
      <y>0</y>
      <width>1022</width>
-     <height>25</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>

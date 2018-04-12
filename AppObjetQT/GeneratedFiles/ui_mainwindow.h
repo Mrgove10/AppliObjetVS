@@ -23,6 +23,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -68,6 +69,7 @@ public:
     QLabel *label_17;
     QPushButton *adminAjout;
     QLabel *label_34;
+    QTextEdit *AdminListTextEdit;
     QWidget *tab_4;
     QPushButton *etudiantAjout;
     QWidget *gridLayoutWidget;
@@ -319,6 +321,9 @@ public:
         label_34->setObjectName(QStringLiteral("label_34"));
         label_34->setGeometry(QRect(510, 40, 291, 401));
         label_34->setPixmap(QPixmap(QString::fromUtf8("C:/Users/Utilisateur/Pictures/admin_v01D_support.png")));
+        AdminListTextEdit = new QTextEdit(tab_6);
+        AdminListTextEdit->setObjectName(QStringLiteral("AdminListTextEdit"));
+        AdminListTextEdit->setGeometry(QRect(520, 40, 281, 281));
         tabWidget->addTab(tab_6, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName(QStringLiteral("tab_4"));

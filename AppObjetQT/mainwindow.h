@@ -29,6 +29,7 @@ private:
     Ui::MainWindow *ui;
 
     void createCSV(string param,string param2);
+	string readCSV();
 };
 
 #endif // MAINWINDOW_H

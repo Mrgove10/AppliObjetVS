@@ -75,7 +75,7 @@ void MainWindow::on_adminAjout_clicked()
 
 void MainWindow::on_pushButton_clicked()
 {
-	
+	ui->AdminListTextEdit->setText(QString::fromStdString(readCSV()));
 }
 
 void MainWindow::createCSV(string param, string param2)
@@ -86,4 +86,14 @@ void MainWindow::createCSV(string param, string param2)
 	myfile << '\n';
 	myfile << param <<','<< param2;
 	myfile.close();
+}
+
+string MainWindow::readCSV()
+{
+	string hellooooo;
+	ifstream myfile;
+	myfile.open("test.csv");
+	getline(myfile, hellooooo);
+	myfile.close();
+	return hellooooo;
 }
