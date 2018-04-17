@@ -27,6 +27,13 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_etudiantAjout_clicked()
 {
+    Adresse* AdresseEtudiant = new Adresse(
+        ui->adminAdresseNum->text().toInt(),
+        ui->adminAdresseRue->text().toStdString(),
+        ui->adminAdresseCodePostal->text().toInt(),
+        ui->adminAdresseVille->text().toStdString(),
+        ui->adminAdressePays->text().toStdString());
+                )
     Etudiant* EtudiantActuel = new Etudiant(
         ui->etudiantNom->text().toStdString(),
         ui->etudiantPrenom->text().toStdString(),
@@ -42,6 +49,13 @@ void MainWindow::on_etudiantAjout_clicked()
 
 void MainWindow::on_profAjout_clicked()
 {
+    Adresse* AdresseProf = new Adresse(
+        ui->adminAdresseNum->text().toInt(),
+        ui->adminAdresseRue->text().toStdString(),
+        ui->adminAdresseCodePostal->text().toInt(),
+        ui->adminAdresseVille->text().toStdString(),
+        ui->adminAdressePays->text().toStdString());
+                )
     Prof* ProfActuel = new Prof(
         ui->profNom->text().toStdString(),
         ui->profPrenom->text().toStdString(),
@@ -54,8 +68,15 @@ void MainWindow::on_profAjout_clicked()
 
 void MainWindow::on_adminAjout_clicked()
 {
-	string hello1;
+    Adresse* AdresseAdmin = new Adresse(
+        ui->adminAdresseNum->text().toInt(),
+        ui->adminAdresseRue->text().toStdString(),
+        ui->adminAdresseCodePostal->text().toInt(),
+        ui->adminAdresseVille->text().toStdString(),
+        ui->adminAdressePays->text().toStdString());
+                )
     Administration* AdminActuel = new Administration(
+        ui->adminRole->currentText().toStdString(),
         ui->adminNom->text().toStdString(),
         ui->adminPrenom->text().toStdString(),
         ui->adminEmailPerso->text().toStdString(),
@@ -71,7 +92,28 @@ void MainWindow::on_adminAjout_clicked()
         ui->adminSalaire->text().toFloat(),
         ui->adminDateVirementSalaire->text().toStdString(),
         ui->adminCongeRestant->text().toInt());
-		createCSV(AdminActuel->getNom(), AdminActuel->getPrenom());
+        /*createCSV(AdminActuel->getNom(),
+                  AdminActuel->getPrenom(),
+                  AdresseActuelle->getNumeroRue(),
+                  AdresseActuelle->getRue(),
+                  AdresseActuelle->getCodePostal(),
+                  AdresseActuelle->getVille(),
+                  AdresseActuelle->getPays(),
+                  AdminActuel->getEmail(),
+                  AdminActuel->getTelephone(),
+                  AdminActuel->getDateNaissance(),
+                  AdminActuel->getNumCompteBancaire(),
+                  AdminActuel->getEmailPro(),
+                  AdminActuel->getTelFixPro(),
+                  AdminActuel->getTelMobilePro(),
+                  AdminActuel->getHoraires(),
+                  AdminActuel->getContrat(),
+                  AdminActuel->getTypeDePoste(),
+                  AdminActuel->getSalaire(),
+                  AdminActuel->getDateVirementSalaire(),
+                  AdminActuel->getCongeRestant());*/
+
+
 }
 
 void MainWindow::on_pushButton_clicked()
