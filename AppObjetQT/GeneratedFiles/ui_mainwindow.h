@@ -112,7 +112,6 @@ public:
     QLineEdit *profNumCompteBancaire;
     QPushButton *profAjout;
     QLabel *label_33;
-    QPushButton *pushButton;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -126,7 +125,7 @@ public:
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
-        tabWidget->setGeometry(QRect(0, 0, 871, 581));
+        tabWidget->setGeometry(QRect(0, 0, 911, 581));
         tab_6 = new QWidget();
         tab_6->setObjectName(QStringLiteral("tab_6"));
         gridLayoutWidget_3 = new QWidget(tab_6);
@@ -539,9 +538,6 @@ public:
         label_33->setGeometry(QRect(490, 10, 351, 281));
         label_33->setPixmap(QPixmap(QString::fromUtf8("C:/Users/Utilisateur/Pictures/Coaching 5.jpg")));
         tabWidget->addTab(tab_5, QString());
-        pushButton = new QPushButton(centralWidget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(870, 30, 80, 25));
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
@@ -615,7 +611,6 @@ public:
         profAjout->setText(QApplication::translate("MainWindow", "Ajout Professeur", nullptr));
         label_33->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "Professeur", nullptr));
-        pushButton->setText(QApplication::translate("MainWindow", "connect to db", nullptr));
     } // retranslateUi
 
 };
