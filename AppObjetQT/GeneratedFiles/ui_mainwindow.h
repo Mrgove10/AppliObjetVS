@@ -85,7 +85,7 @@ public:
     QLineEdit *adminAdresseVille;
     QLineEdit *adminAdressePays;
     QLineEdit *adminAdresseCodePostal;
-    QSpinBox *adminAdresseNum;
+    QLineEdit *adminAdresseNum;
     QPushButton *adminAjout;
     QLabel *label_34;
     QListWidget *listWidget;
@@ -454,7 +454,7 @@ public:
 
         gridLayout_3->addWidget(adminAdresseCodePostal, 6, 1, 1, 1);
 
-        adminAdresseNum = new QSpinBox(gridLayoutWidget_3);
+        adminAdresseNum = new QLineEdit(gridLayoutWidget_3);
         adminAdresseNum->setObjectName(QStringLiteral("adminAdresseNum"));
 
         gridLayout_3->addWidget(adminAdresseNum, 4, 1, 1, 1);
@@ -819,7 +819,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 948, 25));
+        menuBar->setGeometry(QRect(0, 0, 948, 26));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -830,7 +830,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

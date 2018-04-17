@@ -35,7 +35,7 @@ void MainWindow::on_etudiantAjout_clicked()
         ui->adminAdresseCodePostal->text().toStdString(),
         ui->adminAdresseVille->text().toStdString(),
         ui->adminAdressePays->text().toStdString());
-                )
+               
     Etudiant* EtudiantActuel = new Etudiant(
         ui->etudiantNom->text().toStdString(),
         ui->etudiantPrenom->text().toStdString(),
@@ -57,7 +57,7 @@ void MainWindow::on_profAjout_clicked()
         ui->adminAdresseCodePostal->text().toStdString(),
         ui->adminAdresseVille->text().toStdString(),
         ui->adminAdressePays->text().toStdString());
-                )
+               
     Prof* ProfActuel = new Prof(
         ui->profNom->text().toStdString(),
         ui->profPrenom->text().toStdString(),
@@ -76,7 +76,7 @@ void MainWindow::on_adminAjout_clicked()
         ui->adminAdresseCodePostal->text().toStdString(),
         ui->adminAdresseVille->text().toStdString(),
         ui->adminAdressePays->text().toStdString());
-                )
+               
     Administration* AdminActuel = new Administration(
         ui->adminRole->currentText().toStdString(),
         ui->adminNom->text().toStdString(),
