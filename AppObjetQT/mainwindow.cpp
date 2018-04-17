@@ -82,19 +82,39 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::createCSV(string param, string param2)
 {
 	ofstream myfile;
-	myfile.open("files\Administration.csv");
 	myfile << "Nom,Prenom";
 	myfile << '\n';
-	myfile << param <<','<< param2;
+	myfile.open("DataAdministration.csv", std::ios_base::app);
+	myfile << param << ',' << param2 << "\n";
 	myfile.close();
+
+	string text;
+	text = "caca";
+
+	//text = ui->textEdit->text();
+	ui.listWidget.addItem("test");
 }
 
 string MainWindow::readCSV()
 {
-	string hellooooo;
+	string line;
+	ifstream myfile("DataAdministration.csv");
+	if (myfile.is_open())
+	{
+		while (getline(myfile, line))
+		{
+			cout << line << '\n';
+		}
+		myfile.close();
+		
+	}
+
+	else cout << "Unable to open file";
+	/*string hellooooo;
 	ifstream myfile;
 	myfile.open("test.csv");
 	getline(myfile, hellooooo);
 	myfile.close();
-	return hellooooo;
+	return hellooooo;*/
+	return "0";
 }

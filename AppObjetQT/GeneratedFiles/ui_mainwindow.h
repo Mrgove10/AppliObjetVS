@@ -19,6 +19,7 @@
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -462,7 +463,7 @@ public:
         adminAjout->setGeometry(QRect(540, 590, 191, 28));
         label_34 = new QLabel(tab_6);
         label_34->setObjectName(QStringLiteral("label_34"));
-        label_34->setGeometry(QRect(510, 40, 291, 401));
+        label_34->setGeometry(QRect(500, 60, 291, 401));
         label_34->setPixmap(QPixmap(QString::fromUtf8("C:/Users/Utilisateur/Pictures/admin_v01D_support.png")));
         tabWidget->addTab(tab_6, QString());
         tab_4 = new QWidget();
