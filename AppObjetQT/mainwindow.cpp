@@ -17,6 +17,8 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+	readCSV();
+	AffichageList();
 }
 
 MainWindow::~MainWindow()
@@ -26,6 +28,13 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_etudiantAjout_clicked()
 {
+    Adresse* AdresseEtudiant = new Adresse(
+        ui->adminAdresseNum->text().toInt(),
+        ui->adminAdresseRue->text().toStdString(),
+        ui->adminAdresseCodePostal->text().toStdString(),
+        ui->adminAdresseVille->text().toStdString(),
+        ui->adminAdressePays->text().toStdString());
+                
     Etudiant* EtudiantActuel = new Etudiant(
         ui->etudiantNom->text().toStdString(),
         ui->etudiantPrenom->text().toStdString(),
@@ -41,6 +50,13 @@ void MainWindow::on_etudiantAjout_clicked()
 
 void MainWindow::on_profAjout_clicked()
 {
+    Adresse* AdresseProf = new Adresse(
+        ui->adminAdresseNum->text().toInt(),
+        ui->adminAdresseRue->text().toStdString(),
+        ui->adminAdresseCodePostal->text().toStdString(),
+        ui->adminAdresseVille->text().toStdString(),
+        ui->adminAdressePays->text().toStdString());
+                
     Prof* ProfActuel = new Prof(
         ui->profNom->text().toStdString(),
         ui->profPrenom->text().toStdString(),
@@ -53,13 +69,21 @@ void MainWindow::on_profAjout_clicked()
 
 void MainWindow::on_adminAjout_clicked()
 {
-	string hello1;
+    Adresse* AdresseAdmin = new Adresse(
+        ui->adminAdresseNum->text().toInt(),
+        ui->adminAdresseRue->text().toStdString(),
+        ui->adminAdresseCodePostal->text().toStdString(),
+        ui->adminAdresseVille->text().toStdString(),
+        ui->adminAdressePays->text().toStdString()
+	);
+                
     Administration* AdminActuel = new Administration(
+        ui->adminRole->currentText().toStdString(),
         ui->adminNom->text().toStdString(),
         ui->adminPrenom->text().toStdString(),
         ui->adminEmailPerso->text().toStdString(),
         ui->adminTelPerso->text().toInt(),
-        ui->adminDateNaissance->text().toStdString(),
+        ui->adminDateNaissance->text().toStdString(),	
         ui->adminNumCompteBancaire->text().toInt(),
         ui->adminEmailPro->text().toStdString(),
         ui->adminTelFixPro->text().toInt(),
@@ -70,30 +94,89 @@ void MainWindow::on_adminAjout_clicked()
         ui->adminSalaire->text().toFloat(),
         ui->adminDateVirementSalaire->text().toStdString(),
         ui->adminCongeRestant->text().toInt());
-		createCSV(AdminActuel->getNom(), AdminActuel->getPrenom());
+	createCSV(AdminActuel->getNom(), AdminActuel->getPrenom());
+	AffichageList();
+        /*createCSV(AdminActuel->getNom(),
+                  AdminActuel->getPrenom(),
+                  AdresseActuelle->getNumeroRue(),
+                  AdresseActuelle->getRue(),
+                  AdresseActuelle->getCodePostal(),
+                  AdresseActuelle->getVille(),
+                  AdresseActuelle->getPays(),
+                  AdminActuel->getEmail(),
+                  AdminActuel->getTelephone(),
+                  AdminActuel->getDateNaissance(),
+                  AdminActuel->getNumCompteBancaire(),
+                  AdminActuel->getEmailPro(),
+                  AdminActuel->getTelFixPro(),
+                  AdminActuel->getTelMobilePro(),
+                  AdminActuel->getHoraires(),
+                  AdminActuel->getContrat(),
+                  AdminActuel->getTypeDePoste(),
+                  AdminActuel->getSalaire(),
+                  AdminActuel->getDateVirementSalaire(),
+                  AdminActuel->getCongeRestant());*/
+
+
 }
 
 void MainWindow::on_pushButton_clicked()
 {
-	ui->AdminListTextEdit->setText(QString::fromStdString(readCSV()));
+	//ui->AdminListTextEdit->setText(QString::fromStdString(readCSV()));
 }
 
 void MainWindow::createCSV(string param, string param2)
 {
 	ofstream myfile;
-	myfile.open("test.csv");
+	myfile.open("DataAdministration.csv");
 	myfile << "Nom,Prenom";
 	myfile << '\n';
-	myfile << param <<','<< param2;
+	myfile.open("test.txt", std::ios_base::app);
+	myfile << param << ',' << param2 << "\n";
 	myfile.close();
+}
+
+void MainWindow::AffichageList()
+{
+	string line;
+	ifstream myfile("DataAdministration.csv");
+	if (myfile.is_open())
+	{
+		int i;
+		while (getline(myfile, line))
+		{
+			int i;
+			cout << line << '\n';
+			ui->listWidget->addItem(QString::fromStdString(line) /*+ QString::number(i)*/);
+			i++;
+			
+		}
+		myfile.close();
+	}
+
+
 }
 
 string MainWindow::readCSV()
 {
-	string hellooooo;
+	string line;
+	ifstream myfile("DataAdministration.csv");
+	if (myfile.is_open())
+	{
+		while (getline(myfile, line))
+		{
+			cout << line << '\n';
+		}
+		myfile.close();
+		
+	}
+
+	else cout << "Unable to open file";
+	/*string hellooooo;
 	ifstream myfile;
 	myfile.open("test.csv");
 	getline(myfile, hellooooo);
 	myfile.close();
-	return hellooooo;
+	return hellooooo;*/
+	return "0";
 }

@@ -9,8 +9,11 @@ class Administration
 {
 public:
 	Administration();
-	Administration(string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string emailPro, int telephoneFix, int telephoneMobile, float horaires, string contrat, string typeDePoste, float salaire, string dateVirementSalaire, int congeRestant);
+	Administration(string role, string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string emailPro, int telephoneFix, int telephoneMobile, float horaires, string contrat, string typeDePoste, float salaire, string dateVirementSalaire, int congeRestant);
 	~Administration();
+
+	string getRole();
+	void setRole(string rolePara);
 
 	string getNom();
 	void setNom(string nomPara);
@@ -58,6 +61,7 @@ public:
 	void setCongeRestant(int congeRestantPara);
 
 private:
+	string m_role;
 	string m_nom;
 	string m_prenom;
 	string m_email;

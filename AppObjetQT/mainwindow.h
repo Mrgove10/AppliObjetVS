@@ -27,8 +27,10 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+	void AffichageList();
 
     void createCSV(string param,string param2);
+	void updateCSV(string param, string param2);
 	string readCSV();
 };
 
