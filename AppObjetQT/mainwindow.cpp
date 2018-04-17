@@ -18,6 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 	readCSV();
+	AffichageList();
 }
 
 MainWindow::~MainWindow()
@@ -89,13 +90,28 @@ void MainWindow::createCSV(string param, string param2)
 	myfile.close();
 }
 
-void AffichageList()
+void MainWindow::AffichageList()
 {
-	for (int i = 0; i < 10; i++)
+	string line;
+	ifstream myfile("DataAdministration.csv");
+	if (myfile.is_open())
 	{
-		ui->listWidget->addItem("Item " + QString::number(i));
+		int i;
+		while (getline(myfile, line))
+		{
+			int i;
+
+			cout << line << '\n';
+			ui->listWidget->addItem(QString::fromStdString(line) /*+ QString::number(i)*/);
+			i++;
+			
+		}
+		myfile.close();
 	}
+
+
 }
+
 string MainWindow::readCSV()
 {
 	string line;

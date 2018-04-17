@@ -26,7 +26,6 @@
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
-#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -89,7 +88,6 @@ public:
     QSpinBox *adminAdresseNum;
     QPushButton *adminAjout;
     QLabel *label_34;
-    QTextEdit *textEdit;
     QListWidget *listWidget;
     QWidget *tab_4;
     QPushButton *etudiantAjout;
@@ -193,7 +191,7 @@ public:
         tab_6->setObjectName(QStringLiteral("tab_6"));
         gridLayoutWidget_3 = new QWidget(tab_6);
         gridLayoutWidget_3->setObjectName(QStringLiteral("gridLayoutWidget_3"));
-        gridLayoutWidget_3->setGeometry(QRect(10, 10, 471, 632));
+        gridLayoutWidget_3->setGeometry(QRect(10, 10, 471, 677));
         gridLayout_3 = new QGridLayout(gridLayoutWidget_3);
         gridLayout_3->setSpacing(7);
         gridLayout_3->setContentsMargins(11, 11, 11, 11);
@@ -468,9 +466,6 @@ public:
         label_34->setObjectName(QStringLiteral("label_34"));
         label_34->setGeometry(QRect(500, 60, 291, 401));
         label_34->setPixmap(QPixmap(QString::fromUtf8("C:/Users/Utilisateur/Pictures/admin_v01D_support.png")));
-        textEdit = new QTextEdit(tab_6);
-        textEdit->setObjectName(QStringLiteral("textEdit"));
-        textEdit->setGeometry(QRect(520, 120, 241, 191));
         listWidget = new QListWidget(tab_6);
         listWidget->setObjectName(QStringLiteral("listWidget"));
         listWidget->setGeometry(QRect(540, 350, 256, 192));
@@ -663,7 +658,7 @@ public:
         tab_5->setObjectName(QStringLiteral("tab_5"));
         gridLayoutWidget_2 = new QWidget(tab_5);
         gridLayoutWidget_2->setObjectName(QStringLiteral("gridLayoutWidget_2"));
-        gridLayoutWidget_2->setGeometry(QRect(10, 10, 471, 371));
+        gridLayoutWidget_2->setGeometry(QRect(10, 10, 471, 397));
         gridLayout_2 = new QGridLayout(gridLayoutWidget_2);
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
@@ -824,7 +819,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 948, 26));
+        menuBar->setGeometry(QRect(0, 0, 948, 25));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
