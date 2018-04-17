@@ -87,14 +87,15 @@ void MainWindow::createCSV(string param, string param2)
 	myfile.open("DataAdministration.csv", std::ios_base::app);
 	myfile << param << ',' << param2 << "\n";
 	myfile.close();
-
-	string text;
-	text = "caca";
-
-	//text = ui->textEdit->text();
-	ui.listWidget.addItem("test");
 }
 
+void AffichageList()
+{
+	for (int i = 0; i < 10; i++)
+	{
+		ui->listWidget->addItem("Item " + QString::number(i));
+	}
+}
 string MainWindow::readCSV()
 {
 	string line;
