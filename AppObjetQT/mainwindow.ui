@@ -20,11 +20,11 @@
       <x>10</x>
       <y>10</y>
       <width>911</width>
-      <height>751</height>
+      <height>691</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_6">
      <attribute name="title">
@@ -33,9 +33,9 @@
      <widget class="QWidget" name="gridLayoutWidget_3">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>10</y>
-        <width>441</width>
+        <width>471</width>
         <height>611</height>
        </rect>
       </property>
