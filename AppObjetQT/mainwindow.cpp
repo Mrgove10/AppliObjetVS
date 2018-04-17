@@ -3,6 +3,7 @@
 #include "Etudiant.h"
 #include "Prof.h"
 #include "Administration.h"
+#include "Adresse.h"
 #include <QLineEdit>
 #include <iostream>
 #include <QtSql>
@@ -31,7 +32,7 @@ void MainWindow::on_etudiantAjout_clicked()
     Adresse* AdresseEtudiant = new Adresse(
         ui->adminAdresseNum->text().toInt(),
         ui->adminAdresseRue->text().toStdString(),
-        ui->adminAdresseCodePostal->text().toInt(),
+        ui->adminAdresseCodePostal->text().toStdString(),
         ui->adminAdresseVille->text().toStdString(),
         ui->adminAdressePays->text().toStdString());
                 )
@@ -53,7 +54,7 @@ void MainWindow::on_profAjout_clicked()
     Adresse* AdresseProf = new Adresse(
         ui->adminAdresseNum->text().toInt(),
         ui->adminAdresseRue->text().toStdString(),
-        ui->adminAdresseCodePostal->text().toInt(),
+        ui->adminAdresseCodePostal->text().toStdString(),
         ui->adminAdresseVille->text().toStdString(),
         ui->adminAdressePays->text().toStdString());
                 )
@@ -72,7 +73,7 @@ void MainWindow::on_adminAjout_clicked()
     Adresse* AdresseAdmin = new Adresse(
         ui->adminAdresseNum->text().toInt(),
         ui->adminAdresseRue->text().toStdString(),
-        ui->adminAdresseCodePostal->text().toInt(),
+        ui->adminAdresseCodePostal->text().toStdString(),
         ui->adminAdresseVille->text().toStdString(),
         ui->adminAdressePays->text().toStdString());
                 )
