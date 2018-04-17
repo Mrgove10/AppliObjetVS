@@ -17,6 +17,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+	readCSV();
 }
 
 MainWindow::~MainWindow()
@@ -75,13 +76,13 @@ void MainWindow::on_adminAjout_clicked()
 
 void MainWindow::on_pushButton_clicked()
 {
-	ui->AdminListTextEdit->setText(QString::fromStdString(readCSV()));
+	//ui->AdminListTextEdit->setText(QString::fromStdString(readCSV()));
 }
 
 void MainWindow::createCSV(string param, string param2)
 {
 	ofstream myfile;
-	myfile.open("test.csv");
+	myfile.open("files\Administration.csv");
 	myfile << "Nom,Prenom";
 	myfile << '\n';
 	myfile << param <<','<< param2;
