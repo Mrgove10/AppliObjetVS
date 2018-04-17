@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -541,7 +541,7 @@
         <widget class="QLineEdit" name="adminAdresseCodePostal"/>
        </item>
        <item row="4" column="1">
-        <widget class="QSpinBox" name="adminAdresseNum"/>
+        <widget class="QLineEdit" name="adminAdresseNum"/>
        </item>
       </layout>
      </widget>
@@ -1235,7 +1235,7 @@
      <x>0</x>
      <y>0</y>
      <width>948</width>
-     <height>25</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
