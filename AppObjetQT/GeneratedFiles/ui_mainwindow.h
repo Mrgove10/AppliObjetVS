@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QDateEdit>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
@@ -38,35 +39,37 @@ public:
     QWidget *gridLayoutWidget_3;
     QGridLayout *gridLayout_3;
     QLineEdit *adminCongeRestant;
-    QLabel *label_28;
-    QDateEdit *adminDateVirementSalaire;
-    QLabel *label_29;
-    QLabel *label_26;
-    QLineEdit *adminEmailPerso;
-    QLineEdit *adminNom;
-    QLineEdit *adminTelPerso;
-    QLineEdit *adminPrenom;
-    QLabel *label_19;
-    QLabel *label_18;
-    QLabel *label_20;
-    QLabel *label_23;
-    QLabel *label_21;
-    QDateEdit *adminDateNaissance;
-    QLabel *label_22;
-    QLineEdit *adminTelFixPro;
+    QLineEdit *adminTelMobilePro;
     QLabel *label_24;
     QLabel *label_25;
-    QLineEdit *adminEmailPro;
     QLineEdit *adminNumCompteBancaire;
-    QLineEdit *adminTelMobilePro;
-    QLabel *label_27;
-    QLineEdit *adminSalaire;
-    QLineEdit *adminTypePoste;
-    QLineEdit *adminHoraires;
+    QLineEdit *adminEmailPro;
     QLineEdit *adminContrat;
-    QLabel *label_30;
+    QLineEdit *adminSalaire;
+    QLineEdit *adminHoraires;
+    QLabel *label_27;
+    QLineEdit *adminTypePoste;
     QLabel *label_31;
+    QLabel *label_30;
     QLabel *label_17;
+    QLineEdit *adminEmailPerso;
+    QLabel *label_29;
+    QDateEdit *adminDateVirementSalaire;
+    QLabel *label_28;
+    QLabel *label_26;
+    QLineEdit *adminNom;
+    QLineEdit *adminPrenom;
+    QLineEdit *adminTelPerso;
+    QLabel *label_18;
+    QLabel *label_23;
+    QLabel *label_20;
+    QLabel *label_19;
+    QLabel *label_22;
+    QDateEdit *adminDateNaissance;
+    QLabel *label_21;
+    QLineEdit *adminTelFixPro;
+    QComboBox *comboBox;
+    QLabel *label_35;
     QPushButton *adminAjout;
     QLabel *label_34;
     QTextEdit *AdminListTextEdit;
@@ -139,166 +142,77 @@ public:
         adminCongeRestant = new QLineEdit(gridLayoutWidget_3);
         adminCongeRestant->setObjectName(QStringLiteral("adminCongeRestant"));
 
-        gridLayout_3->addWidget(adminCongeRestant, 14, 1, 1, 1);
+        gridLayout_3->addWidget(adminCongeRestant, 15, 1, 1, 1);
 
-        label_28 = new QLabel(gridLayoutWidget_3);
-        label_28->setObjectName(QStringLiteral("label_28"));
+        adminTelMobilePro = new QLineEdit(gridLayoutWidget_3);
+        adminTelMobilePro->setObjectName(QStringLiteral("adminTelMobilePro"));
+
+        gridLayout_3->addWidget(adminTelMobilePro, 9, 1, 1, 1);
+
+        label_24 = new QLabel(gridLayoutWidget_3);
+        label_24->setObjectName(QStringLiteral("label_24"));
         QFont font;
         font.setPointSize(10);
         font.setBold(true);
         font.setUnderline(true);
         font.setWeight(75);
-        label_28->setFont(font);
-
-        gridLayout_3->addWidget(label_28, 13, 0, 1, 1);
-
-        adminDateVirementSalaire = new QDateEdit(gridLayoutWidget_3);
-        adminDateVirementSalaire->setObjectName(QStringLiteral("adminDateVirementSalaire"));
-
-        gridLayout_3->addWidget(adminDateVirementSalaire, 13, 1, 1, 1);
-
-        label_29 = new QLabel(gridLayoutWidget_3);
-        label_29->setObjectName(QStringLiteral("label_29"));
-        label_29->setFont(font);
-
-        gridLayout_3->addWidget(label_29, 14, 0, 1, 1);
-
-        label_26 = new QLabel(gridLayoutWidget_3);
-        label_26->setObjectName(QStringLiteral("label_26"));
-        label_26->setFont(font);
-
-        gridLayout_3->addWidget(label_26, 9, 0, 1, 1);
-
-        adminEmailPerso = new QLineEdit(gridLayoutWidget_3);
-        adminEmailPerso->setObjectName(QStringLiteral("adminEmailPerso"));
-
-        gridLayout_3->addWidget(adminEmailPerso, 3, 1, 1, 1);
-
-        adminNom = new QLineEdit(gridLayoutWidget_3);
-        adminNom->setObjectName(QStringLiteral("adminNom"));
-
-        gridLayout_3->addWidget(adminNom, 0, 1, 1, 1);
-
-        adminTelPerso = new QLineEdit(gridLayoutWidget_3);
-        adminTelPerso->setObjectName(QStringLiteral("adminTelPerso"));
-
-        gridLayout_3->addWidget(adminTelPerso, 2, 1, 1, 1);
-
-        adminPrenom = new QLineEdit(gridLayoutWidget_3);
-        adminPrenom->setObjectName(QStringLiteral("adminPrenom"));
-
-        gridLayout_3->addWidget(adminPrenom, 1, 1, 1, 1);
-
-        label_19 = new QLabel(gridLayoutWidget_3);
-        label_19->setObjectName(QStringLiteral("label_19"));
-        label_19->setFont(font);
-
-        gridLayout_3->addWidget(label_19, 2, 0, 1, 1);
-
-        label_18 = new QLabel(gridLayoutWidget_3);
-        label_18->setObjectName(QStringLiteral("label_18"));
-        label_18->setFont(font);
-
-        gridLayout_3->addWidget(label_18, 1, 0, 1, 1);
-
-        label_20 = new QLabel(gridLayoutWidget_3);
-        label_20->setObjectName(QStringLiteral("label_20"));
-        label_20->setFont(font);
-
-        gridLayout_3->addWidget(label_20, 6, 0, 1, 1);
-
-        label_23 = new QLabel(gridLayoutWidget_3);
-        label_23->setObjectName(QStringLiteral("label_23"));
-        label_23->setFont(font);
-
-        gridLayout_3->addWidget(label_23, 5, 0, 1, 1);
-
-        label_21 = new QLabel(gridLayoutWidget_3);
-        label_21->setObjectName(QStringLiteral("label_21"));
-        label_21->setFont(font);
-
-        gridLayout_3->addWidget(label_21, 3, 0, 1, 1);
-
-        adminDateNaissance = new QDateEdit(gridLayoutWidget_3);
-        adminDateNaissance->setObjectName(QStringLiteral("adminDateNaissance"));
-
-        gridLayout_3->addWidget(adminDateNaissance, 4, 1, 1, 1);
-
-        label_22 = new QLabel(gridLayoutWidget_3);
-        label_22->setObjectName(QStringLiteral("label_22"));
-        label_22->setFont(font);
-
-        gridLayout_3->addWidget(label_22, 4, 0, 1, 1);
-
-        adminTelFixPro = new QLineEdit(gridLayoutWidget_3);
-        adminTelFixPro->setObjectName(QStringLiteral("adminTelFixPro"));
-
-        gridLayout_3->addWidget(adminTelFixPro, 7, 1, 1, 1);
-
-        label_24 = new QLabel(gridLayoutWidget_3);
-        label_24->setObjectName(QStringLiteral("label_24"));
         label_24->setFont(font);
 
-        gridLayout_3->addWidget(label_24, 7, 0, 1, 1);
+        gridLayout_3->addWidget(label_24, 8, 0, 1, 1);
 
         label_25 = new QLabel(gridLayoutWidget_3);
         label_25->setObjectName(QStringLiteral("label_25"));
         label_25->setFont(font);
 
-        gridLayout_3->addWidget(label_25, 8, 0, 1, 1);
-
-        adminEmailPro = new QLineEdit(gridLayoutWidget_3);
-        adminEmailPro->setObjectName(QStringLiteral("adminEmailPro"));
-
-        gridLayout_3->addWidget(adminEmailPro, 6, 1, 1, 1);
+        gridLayout_3->addWidget(label_25, 9, 0, 1, 1);
 
         adminNumCompteBancaire = new QLineEdit(gridLayoutWidget_3);
         adminNumCompteBancaire->setObjectName(QStringLiteral("adminNumCompteBancaire"));
 
-        gridLayout_3->addWidget(adminNumCompteBancaire, 5, 1, 1, 1);
+        gridLayout_3->addWidget(adminNumCompteBancaire, 6, 1, 1, 1);
 
-        adminTelMobilePro = new QLineEdit(gridLayoutWidget_3);
-        adminTelMobilePro->setObjectName(QStringLiteral("adminTelMobilePro"));
+        adminEmailPro = new QLineEdit(gridLayoutWidget_3);
+        adminEmailPro->setObjectName(QStringLiteral("adminEmailPro"));
 
-        gridLayout_3->addWidget(adminTelMobilePro, 8, 1, 1, 1);
+        gridLayout_3->addWidget(adminEmailPro, 7, 1, 1, 1);
+
+        adminContrat = new QLineEdit(gridLayoutWidget_3);
+        adminContrat->setObjectName(QStringLiteral("adminContrat"));
+
+        gridLayout_3->addWidget(adminContrat, 11, 1, 1, 1);
+
+        adminSalaire = new QLineEdit(gridLayoutWidget_3);
+        adminSalaire->setObjectName(QStringLiteral("adminSalaire"));
+
+        gridLayout_3->addWidget(adminSalaire, 13, 1, 1, 1);
+
+        adminHoraires = new QLineEdit(gridLayoutWidget_3);
+        adminHoraires->setObjectName(QStringLiteral("adminHoraires"));
+
+        gridLayout_3->addWidget(adminHoraires, 10, 1, 1, 1);
 
         label_27 = new QLabel(gridLayoutWidget_3);
         label_27->setObjectName(QStringLiteral("label_27"));
         label_27->setFont(font);
 
-        gridLayout_3->addWidget(label_27, 10, 0, 1, 1);
-
-        adminSalaire = new QLineEdit(gridLayoutWidget_3);
-        adminSalaire->setObjectName(QStringLiteral("adminSalaire"));
-
-        gridLayout_3->addWidget(adminSalaire, 12, 1, 1, 1);
+        gridLayout_3->addWidget(label_27, 11, 0, 1, 1);
 
         adminTypePoste = new QLineEdit(gridLayoutWidget_3);
         adminTypePoste->setObjectName(QStringLiteral("adminTypePoste"));
 
-        gridLayout_3->addWidget(adminTypePoste, 11, 1, 1, 1);
-
-        adminHoraires = new QLineEdit(gridLayoutWidget_3);
-        adminHoraires->setObjectName(QStringLiteral("adminHoraires"));
-
-        gridLayout_3->addWidget(adminHoraires, 9, 1, 1, 1);
-
-        adminContrat = new QLineEdit(gridLayoutWidget_3);
-        adminContrat->setObjectName(QStringLiteral("adminContrat"));
-
-        gridLayout_3->addWidget(adminContrat, 10, 1, 1, 1);
-
-        label_30 = new QLabel(gridLayoutWidget_3);
-        label_30->setObjectName(QStringLiteral("label_30"));
-        label_30->setFont(font);
-
-        gridLayout_3->addWidget(label_30, 11, 0, 1, 1);
+        gridLayout_3->addWidget(adminTypePoste, 12, 1, 1, 1);
 
         label_31 = new QLabel(gridLayoutWidget_3);
         label_31->setObjectName(QStringLiteral("label_31"));
         label_31->setFont(font);
 
-        gridLayout_3->addWidget(label_31, 12, 0, 1, 1);
+        gridLayout_3->addWidget(label_31, 13, 0, 1, 1);
+
+        label_30 = new QLabel(gridLayoutWidget_3);
+        label_30->setObjectName(QStringLiteral("label_30"));
+        label_30->setFont(font);
+
+        gridLayout_3->addWidget(label_30, 12, 0, 1, 1);
 
         label_17 = new QLabel(gridLayoutWidget_3);
         label_17->setObjectName(QStringLiteral("label_17"));
@@ -311,7 +225,111 @@ public:
         label_17->setFont(font1);
         label_17->setLineWidth(1);
 
-        gridLayout_3->addWidget(label_17, 0, 0, 1, 1);
+        gridLayout_3->addWidget(label_17, 1, 0, 1, 1);
+
+        adminEmailPerso = new QLineEdit(gridLayoutWidget_3);
+        adminEmailPerso->setObjectName(QStringLiteral("adminEmailPerso"));
+
+        gridLayout_3->addWidget(adminEmailPerso, 4, 1, 1, 1);
+
+        label_29 = new QLabel(gridLayoutWidget_3);
+        label_29->setObjectName(QStringLiteral("label_29"));
+        label_29->setFont(font);
+
+        gridLayout_3->addWidget(label_29, 15, 0, 1, 1);
+
+        adminDateVirementSalaire = new QDateEdit(gridLayoutWidget_3);
+        adminDateVirementSalaire->setObjectName(QStringLiteral("adminDateVirementSalaire"));
+
+        gridLayout_3->addWidget(adminDateVirementSalaire, 14, 1, 1, 1);
+
+        label_28 = new QLabel(gridLayoutWidget_3);
+        label_28->setObjectName(QStringLiteral("label_28"));
+        label_28->setFont(font);
+
+        gridLayout_3->addWidget(label_28, 14, 0, 1, 1);
+
+        label_26 = new QLabel(gridLayoutWidget_3);
+        label_26->setObjectName(QStringLiteral("label_26"));
+        label_26->setFont(font);
+
+        gridLayout_3->addWidget(label_26, 10, 0, 1, 1);
+
+        adminNom = new QLineEdit(gridLayoutWidget_3);
+        adminNom->setObjectName(QStringLiteral("adminNom"));
+
+        gridLayout_3->addWidget(adminNom, 1, 1, 1, 1);
+
+        adminPrenom = new QLineEdit(gridLayoutWidget_3);
+        adminPrenom->setObjectName(QStringLiteral("adminPrenom"));
+
+        gridLayout_3->addWidget(adminPrenom, 2, 1, 1, 1);
+
+        adminTelPerso = new QLineEdit(gridLayoutWidget_3);
+        adminTelPerso->setObjectName(QStringLiteral("adminTelPerso"));
+
+        gridLayout_3->addWidget(adminTelPerso, 3, 1, 1, 1);
+
+        label_18 = new QLabel(gridLayoutWidget_3);
+        label_18->setObjectName(QStringLiteral("label_18"));
+        label_18->setFont(font);
+
+        gridLayout_3->addWidget(label_18, 2, 0, 1, 1);
+
+        label_23 = new QLabel(gridLayoutWidget_3);
+        label_23->setObjectName(QStringLiteral("label_23"));
+        label_23->setFont(font);
+
+        gridLayout_3->addWidget(label_23, 6, 0, 1, 1);
+
+        label_20 = new QLabel(gridLayoutWidget_3);
+        label_20->setObjectName(QStringLiteral("label_20"));
+        label_20->setFont(font);
+
+        gridLayout_3->addWidget(label_20, 7, 0, 1, 1);
+
+        label_19 = new QLabel(gridLayoutWidget_3);
+        label_19->setObjectName(QStringLiteral("label_19"));
+        label_19->setFont(font);
+
+        gridLayout_3->addWidget(label_19, 3, 0, 1, 1);
+
+        label_22 = new QLabel(gridLayoutWidget_3);
+        label_22->setObjectName(QStringLiteral("label_22"));
+        label_22->setFont(font);
+
+        gridLayout_3->addWidget(label_22, 5, 0, 1, 1);
+
+        adminDateNaissance = new QDateEdit(gridLayoutWidget_3);
+        adminDateNaissance->setObjectName(QStringLiteral("adminDateNaissance"));
+
+        gridLayout_3->addWidget(adminDateNaissance, 5, 1, 1, 1);
+
+        label_21 = new QLabel(gridLayoutWidget_3);
+        label_21->setObjectName(QStringLiteral("label_21"));
+        label_21->setFont(font);
+
+        gridLayout_3->addWidget(label_21, 4, 0, 1, 1);
+
+        adminTelFixPro = new QLineEdit(gridLayoutWidget_3);
+        adminTelFixPro->setObjectName(QStringLiteral("adminTelFixPro"));
+
+        gridLayout_3->addWidget(adminTelFixPro, 8, 1, 1, 1);
+
+        comboBox = new QComboBox(gridLayoutWidget_3);
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->setObjectName(QStringLiteral("comboBox"));
+
+        gridLayout_3->addWidget(comboBox, 0, 1, 1, 1);
+
+        label_35 = new QLabel(gridLayoutWidget_3);
+        label_35->setObjectName(QStringLiteral("label_35"));
+        label_35->setFont(font);
+
+        gridLayout_3->addWidget(label_35, 0, 0, 1, 1);
 
         adminAjout = new QPushButton(tab_6);
         adminAjout->setObjectName(QStringLiteral("adminAjout"));
@@ -541,7 +559,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1022, 25));
+        menuBar->setGeometry(QRect(0, 0, 1022, 26));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -561,25 +579,31 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", nullptr));
-        label_28->setText(QApplication::translate("MainWindow", "Date de virement de salaire :", nullptr));
-        label_29->setText(QApplication::translate("MainWindow", "Cong\303\251 Restant :", nullptr));
-        label_26->setText(QApplication::translate("MainWindow", "Horaires :", nullptr));
-        label_19->setText(QApplication::translate("MainWindow", "Telephone Perso :", nullptr));
-        label_18->setText(QApplication::translate("MainWindow", "Prenom :", nullptr));
-        label_20->setText(QApplication::translate("MainWindow", "E-mail Pro :", nullptr));
-        label_23->setText(QApplication::translate("MainWindow", "Numero Compte Bancaire :", nullptr));
-        label_21->setText(QApplication::translate("MainWindow", "E-mail Perso :", nullptr));
-        label_22->setText(QApplication::translate("MainWindow", "Date de naissance :", nullptr));
-        adminTelFixPro->setText(QString());
+        adminTelMobilePro->setText(QString());
         label_24->setText(QApplication::translate("MainWindow", "Telephone Fix Pro :", nullptr));
         label_25->setText(QApplication::translate("MainWindow", "Telephone Mobile Pro :", nullptr));
-        adminEmailPro->setText(QString());
         adminNumCompteBancaire->setText(QString());
-        adminTelMobilePro->setText(QString());
+        adminEmailPro->setText(QString());
         label_27->setText(QApplication::translate("MainWindow", "Contrat :", nullptr));
-        label_30->setText(QApplication::translate("MainWindow", "Type de Poste :", nullptr));
         label_31->setText(QApplication::translate("MainWindow", "Salaire :", nullptr));
+        label_30->setText(QApplication::translate("MainWindow", "Type de Poste :", nullptr));
         label_17->setText(QApplication::translate("MainWindow", "Nom :", nullptr));
+        label_29->setText(QApplication::translate("MainWindow", "Cong\303\251 Restant :", nullptr));
+        label_28->setText(QApplication::translate("MainWindow", "Date de virement de salaire :", nullptr));
+        label_26->setText(QApplication::translate("MainWindow", "Horaires :", nullptr));
+        label_18->setText(QApplication::translate("MainWindow", "Prenom :", nullptr));
+        label_23->setText(QApplication::translate("MainWindow", "Numero Compte Bancaire :", nullptr));
+        label_20->setText(QApplication::translate("MainWindow", "E-mail Pro :", nullptr));
+        label_19->setText(QApplication::translate("MainWindow", "Telephone Perso :", nullptr));
+        label_22->setText(QApplication::translate("MainWindow", "Date de naissance :", nullptr));
+        label_21->setText(QApplication::translate("MainWindow", "E-mail Perso :", nullptr));
+        adminTelFixPro->setText(QString());
+        comboBox->setItemText(0, QApplication::translate("MainWindow", "Assistant Direction", nullptr));
+        comboBox->setItemText(1, QApplication::translate("MainWindow", "Responsable Enseignement", nullptr));
+        comboBox->setItemText(2, QApplication::translate("MainWindow", "Responsable Entreprise", nullptr));
+        comboBox->setItemText(3, QApplication::translate("MainWindow", "Directeur", nullptr));
+
+        label_35->setText(QApplication::translate("MainWindow", "R\303\264le :", nullptr));
         adminAjout->setText(QApplication::translate("MainWindow", "Ajout Administration", nullptr));
         label_34->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Admininstration", nullptr));
