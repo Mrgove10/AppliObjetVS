@@ -13,6 +13,7 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
+#include <QtWidgets/QColumnView>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QDateEdit>
 #include <QtWidgets/QGridLayout>
@@ -26,6 +27,7 @@
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTableView>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -88,7 +90,10 @@ public:
     QLineEdit *adminAdresseNum;
     QPushButton *adminAjout;
     QLabel *label_34;
-    QListWidget *listWidget;
+    QWidget *tab_2;
+    QListWidget *listWidget_2;
+    QColumnView *columnView_2;
+    QTableView *tableView_2;
     QWidget *tab_4;
     QPushButton *etudiantAjout;
     QWidget *gridLayoutWidget;
@@ -123,6 +128,7 @@ public:
     QLineEdit *etudiantAdressePays;
     QSpinBox *etudiantAdresseNum;
     QLabel *label_32;
+    QWidget *tab_3;
     QWidget *tab_5;
     QWidget *gridLayoutWidget_2;
     QGridLayout *gridLayout_2;
@@ -153,6 +159,7 @@ public:
     QLineEdit *profAdressePays;
     QPushButton *profAjout;
     QLabel *label_33;
+    QWidget *tab_7;
     QMenuBar *menuBar;
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
@@ -161,12 +168,12 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(948, 781);
+        MainWindow->resize(1400, 900);
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
-        tabWidget->setGeometry(QRect(10, 10, 911, 691));
+        tabWidget->setGeometry(QRect(10, 10, 1381, 821));
         tab = new QWidget();
         tab->setObjectName(QStringLiteral("tab"));
         label_54 = new QLabel(tab);
@@ -466,10 +473,20 @@ public:
         label_34->setObjectName(QStringLiteral("label_34"));
         label_34->setGeometry(QRect(500, 60, 291, 401));
         label_34->setPixmap(QPixmap(QString::fromUtf8("C:/Users/Utilisateur/Pictures/admin_v01D_support.png")));
-        listWidget = new QListWidget(tab_6);
-        listWidget->setObjectName(QStringLiteral("listWidget"));
-        listWidget->setGeometry(QRect(540, 350, 256, 192));
         tabWidget->addTab(tab_6, QString());
+        tab_2 = new QWidget();
+        tab_2->setObjectName(QStringLiteral("tab_2"));
+        tab_2->setEnabled(true);
+        listWidget_2 = new QListWidget(tab_2);
+        listWidget_2->setObjectName(QStringLiteral("listWidget_2"));
+        listWidget_2->setGeometry(QRect(230, 430, 391, 231));
+        columnView_2 = new QColumnView(tab_2);
+        columnView_2->setObjectName(QStringLiteral("columnView_2"));
+        columnView_2->setGeometry(QRect(290, 280, 256, 192));
+        tableView_2 = new QTableView(tab_2);
+        tableView_2->setObjectName(QStringLiteral("tableView_2"));
+        tableView_2->setGeometry(QRect(320, 90, 256, 192));
+        tabWidget->addTab(tab_2, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName(QStringLiteral("tab_4"));
         etudiantAjout = new QPushButton(tab_4);
@@ -654,6 +671,9 @@ public:
         label_32->setGeometry(QRect(490, 10, 301, 361));
         label_32->setPixmap(QPixmap(QString::fromUtf8("C:/Users/Utilisateur/Pictures/Universit\303\251.jpg")));
         tabWidget->addTab(tab_4, QString());
+        tab_3 = new QWidget();
+        tab_3->setObjectName(QStringLiteral("tab_3"));
+        tabWidget->addTab(tab_3, QString());
         tab_5 = new QWidget();
         tab_5->setObjectName(QStringLiteral("tab_5"));
         gridLayoutWidget_2 = new QWidget(tab_5);
@@ -816,10 +836,13 @@ public:
         label_33->setGeometry(QRect(490, 10, 351, 281));
         label_33->setPixmap(QPixmap(QString::fromUtf8("C:/Users/Utilisateur/Pictures/Coaching 5.jpg")));
         tabWidget->addTab(tab_5, QString());
+        tab_7 = new QWidget();
+        tab_7->setObjectName(QStringLiteral("tab_7"));
+        tabWidget->addTab(tab_7, QString());
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 948, 26));
+        menuBar->setGeometry(QRect(0, 0, 1400, 25));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -877,6 +900,7 @@ public:
         adminAjout->setText(QApplication::translate("MainWindow", "Ajout Administration", nullptr));
         label_34->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Admininstration", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Liste Administration", nullptr));
         etudiantAjout->setText(QApplication::translate("MainWindow", "Ajout Etudiant", nullptr));
         label_46->setText(QApplication::translate("MainWindow", "Ville :", nullptr));
         label_44->setText(QApplication::translate("MainWindow", "Rue :", nullptr));
@@ -899,6 +923,7 @@ public:
         label_47->setText(QApplication::translate("MainWindow", "Pays :", nullptr));
         label_32->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Etudiant", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Liste Etudiants", nullptr));
         label_51->setText(QApplication::translate("MainWindow", "Code Postal :", nullptr));
         label_48->setText(QApplication::translate("MainWindow", "Adresse :", nullptr));
         label_7->setText(QApplication::translate("MainWindow", "Nom :", nullptr));
@@ -917,6 +942,7 @@ public:
         profAjout->setText(QApplication::translate("MainWindow", "Ajout Professeur", nullptr));
         label_33->setText(QString());
         tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "Professeur", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_7), QApplication::translate("MainWindow", "Liste Professeures", nullptr));
     } // retranslateUi
 
 };

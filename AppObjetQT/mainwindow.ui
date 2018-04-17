@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>948</width>
-    <height>781</height>
+    <width>1400</width>
+    <height>900</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>911</width>
-      <height>691</height>
+      <width>1381</width>
+      <height>821</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -574,11 +574,39 @@
        <pixmap>C:/Users/Utilisateur/Pictures/admin_v01D_support.png</pixmap>
       </property>
      </widget>
-     <widget class="QListWidget" name="listWidget">
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <attribute name="title">
+      <string>Liste Administration</string>
+     </attribute>
+     <widget class="QListWidget" name="listWidget_2">
       <property name="geometry">
        <rect>
-        <x>540</x>
-        <y>350</y>
+        <x>230</x>
+        <y>430</y>
+        <width>391</width>
+        <height>231</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QColumnView" name="columnView_2">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>280</y>
+        <width>256</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView_2">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>90</y>
         <width>256</width>
         <height>192</height>
        </rect>
@@ -928,6 +956,11 @@
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Liste Etudiants</string>
+     </attribute>
+    </widget>
     <widget class="QWidget" name="tab_5">
      <attribute name="title">
       <string>Professeur</string>
@@ -1227,6 +1260,11 @@
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab_7">
+     <attribute name="title">
+      <string>Liste Professeures</string>
+     </attribute>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -1234,8 +1272,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>948</width>
-     <height>26</height>
+     <width>1400</width>
+     <height>25</height>
     </rect>
    </property>
   </widget>

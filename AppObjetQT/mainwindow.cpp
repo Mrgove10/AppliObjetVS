@@ -3,7 +3,6 @@
 #include "Etudiant.h"
 #include "Prof.h"
 #include "Administration.h"
-#include "Adresse.h"
 #include <QLineEdit>
 #include <iostream>
 #include <QtSql>
@@ -35,7 +34,7 @@ void MainWindow::on_etudiantAjout_clicked()
         ui->adminAdresseCodePostal->text().toStdString(),
         ui->adminAdresseVille->text().toStdString(),
         ui->adminAdressePays->text().toStdString());
-               
+                
     Etudiant* EtudiantActuel = new Etudiant(
         ui->etudiantNom->text().toStdString(),
         ui->etudiantPrenom->text().toStdString(),
@@ -57,7 +56,7 @@ void MainWindow::on_profAjout_clicked()
         ui->adminAdresseCodePostal->text().toStdString(),
         ui->adminAdresseVille->text().toStdString(),
         ui->adminAdressePays->text().toStdString());
-               
+                
     Prof* ProfActuel = new Prof(
         ui->profNom->text().toStdString(),
         ui->profPrenom->text().toStdString(),
@@ -75,15 +74,16 @@ void MainWindow::on_adminAjout_clicked()
         ui->adminAdresseRue->text().toStdString(),
         ui->adminAdresseCodePostal->text().toStdString(),
         ui->adminAdresseVille->text().toStdString(),
-        ui->adminAdressePays->text().toStdString());
-               
+        ui->adminAdressePays->text().toStdString()
+	);
+                
     Administration* AdminActuel = new Administration(
         ui->adminRole->currentText().toStdString(),
         ui->adminNom->text().toStdString(),
         ui->adminPrenom->text().toStdString(),
         ui->adminEmailPerso->text().toStdString(),
         ui->adminTelPerso->text().toInt(),
-        ui->adminDateNaissance->text().toStdString(),
+        ui->adminDateNaissance->text().toStdString(),	
         ui->adminNumCompteBancaire->text().toInt(),
         ui->adminEmailPro->text().toStdString(),
         ui->adminTelFixPro->text().toInt(),
