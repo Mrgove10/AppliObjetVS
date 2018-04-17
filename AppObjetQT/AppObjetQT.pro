@@ -27,13 +27,20 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    ebru.cpp
+    ebru.cpp \
+    ebru1.cpp \
+    liste.cpp \
+    formulaire.cpp \
+    formulaire2.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    ebru1.h \
+    statut.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    statut.ui
 
 win32:CONFIG(release, debug|release): LIBS += -L$$PWD/release/lib/ -llibmysql
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/release/lib/ -llibmysqld

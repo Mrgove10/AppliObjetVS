@@ -1,7 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
-#include "ModuleCours.h".h"
+#include "AutoEntrepreneur.h".h"
 
 #include <QLineEdit>
 #include <iostream>
@@ -12,16 +12,10 @@
 #include <fstream>
 void MainWindow::on_pushButton_clicked()
 {
-    ModuleCours*ModuleCours=new Modulecours(
+    ModuleCours*ModuleCours=new AutoEntrepreneur(
                 ui ->intitule->text().toStString(),
 
-              ui ->facture -> text().toInt(),
-               ui ->HeuresTotales -> text().toFloat());
+              ui ->Siren -> text().toInt());
     createCSV (ModuleCoursActuel->getIntitule(), ModuleCoursActuel->geHeuresTotales());
 }
-
-
-
-
-
 
