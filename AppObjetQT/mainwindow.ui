@@ -24,11 +24,11 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
-      <string>Bienvenue</string>
+      <string>Accueil</string>
      </attribute>
      <widget class="QLabel" name="label_54">
       <property name="geometry">
@@ -84,7 +84,7 @@
     </widget>
     <widget class="QWidget" name="tab_6">
      <attribute name="title">
-      <string>Admininstration</string>
+      <string>Ajout Personel Administratif</string>
      </attribute>
      <widget class="QWidget" name="gridLayoutWidget_3">
       <property name="geometry">
@@ -580,9 +580,9 @@
       <bool>true</bool>
      </property>
      <attribute name="title">
-      <string>Liste Administration</string>
+      <string>Liste Personel Administratif</string>
      </attribute>
-     <widget class="QListWidget" name="listWidget_2">
+     <widget class="QListWidget" name="listWidget">
       <property name="geometry">
        <rect>
         <x>230</x>
@@ -615,7 +615,7 @@
     </widget>
     <widget class="QWidget" name="tab_4">
      <attribute name="title">
-      <string>Etudiant</string>
+      <string>Ajout Etudiant</string>
      </attribute>
      <widget class="QPushButton" name="etudiantAjout">
       <property name="geometry">
@@ -963,7 +963,7 @@
     </widget>
     <widget class="QWidget" name="tab_5">
      <attribute name="title">
-      <string>Professeur</string>
+      <string>Ajout Professeur</string>
      </attribute>
      <widget class="QWidget" name="gridLayoutWidget_2">
       <property name="geometry">

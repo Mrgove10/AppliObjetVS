@@ -91,7 +91,7 @@ public:
     QPushButton *adminAjout;
     QLabel *label_34;
     QWidget *tab_2;
-    QListWidget *listWidget_2;
+    QListWidget *listWidget;
     QColumnView *columnView_2;
     QTableView *tableView_2;
     QWidget *tab_4;
@@ -477,9 +477,9 @@ public:
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
         tab_2->setEnabled(true);
-        listWidget_2 = new QListWidget(tab_2);
-        listWidget_2->setObjectName(QStringLiteral("listWidget_2"));
-        listWidget_2->setGeometry(QRect(230, 430, 391, 231));
+        listWidget = new QListWidget(tab_2);
+        listWidget->setObjectName(QStringLiteral("listWidget"));
+        listWidget->setGeometry(QRect(230, 430, 391, 231));
         columnView_2 = new QColumnView(tab_2);
         columnView_2->setObjectName(QStringLiteral("columnView_2"));
         columnView_2->setGeometry(QRect(290, 280, 256, 192));
@@ -853,7 +853,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -865,7 +865,7 @@ public:
         label_54->setText(QString());
         label_55->setText(QString());
         label_56->setText(QApplication::translate("MainWindow", "Ici, Vous allez pouvoir ajouter des personnes \303\240 votre \303\251tablissement ", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Bienvenue", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab), QApplication::translate("MainWindow", "Accueil", nullptr));
         label_35->setText(QApplication::translate("MainWindow", "R\303\264le :", nullptr));
         adminTelMobilePro->setText(QString());
         label_24->setText(QApplication::translate("MainWindow", "Telephone Fix Pro :", nullptr));
@@ -899,8 +899,8 @@ public:
         label_41->setText(QApplication::translate("MainWindow", "Pays :", nullptr));
         adminAjout->setText(QApplication::translate("MainWindow", "Ajout Administration", nullptr));
         label_34->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Admininstration", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Liste Administration", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_6), QApplication::translate("MainWindow", "Ajout Personel Administratif", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "Liste Personel Administratif", nullptr));
         etudiantAjout->setText(QApplication::translate("MainWindow", "Ajout Etudiant", nullptr));
         label_46->setText(QApplication::translate("MainWindow", "Ville :", nullptr));
         label_44->setText(QApplication::translate("MainWindow", "Rue :", nullptr));
@@ -922,7 +922,7 @@ public:
         label_42->setText(QApplication::translate("MainWindow", "Adresse :", nullptr));
         label_47->setText(QApplication::translate("MainWindow", "Pays :", nullptr));
         label_32->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Etudiant", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_4), QApplication::translate("MainWindow", "Ajout Etudiant", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_3), QApplication::translate("MainWindow", "Liste Etudiants", nullptr));
         label_51->setText(QApplication::translate("MainWindow", "Code Postal :", nullptr));
         label_48->setText(QApplication::translate("MainWindow", "Adresse :", nullptr));
@@ -941,7 +941,7 @@ public:
         label_53->setText(QApplication::translate("MainWindow", "Pays :", nullptr));
         profAjout->setText(QApplication::translate("MainWindow", "Ajout Professeur", nullptr));
         label_33->setText(QString());
-        tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "Professeur", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_5), QApplication::translate("MainWindow", "Ajout Professeur", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_7), QApplication::translate("MainWindow", "Liste Professeures", nullptr));
     } // retranslateUi
 

@@ -94,6 +94,8 @@ void MainWindow::on_adminAjout_clicked()
         ui->adminSalaire->text().toFloat(),
         ui->adminDateVirementSalaire->text().toStdString(),
         ui->adminCongeRestant->text().toInt());
+	createCSV(AdminActuel->getNom(), AdminActuel->getPrenom());
+	AffichageList();
         /*createCSV(AdminActuel->getNom(),
                   AdminActuel->getPrenom(),
                   AdresseActuelle->getNumeroRue(),
@@ -126,9 +128,10 @@ void MainWindow::on_pushButton_clicked()
 void MainWindow::createCSV(string param, string param2)
 {
 	ofstream myfile;
+	myfile.open("DataAdministration.csv");
 	myfile << "Nom,Prenom";
 	myfile << '\n';
-	myfile.open("DataAdministration.csv", std::ios_base::app);
+	myfile.open("test.txt", std::ios_base::app);
 	myfile << param << ',' << param2 << "\n";
 	myfile.close();
 }
@@ -143,7 +146,6 @@ void MainWindow::AffichageList()
 		while (getline(myfile, line))
 		{
 			int i;
-
 			cout << line << '\n';
 			ui->listWidget->addItem(QString::fromStdString(line) /*+ QString::number(i)*/);
 			i++;
