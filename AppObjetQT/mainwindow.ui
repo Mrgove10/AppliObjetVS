@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_6">
      <attribute name="title">
@@ -527,10 +527,187 @@
         <x>10</x>
         <y>10</y>
         <width>471</width>
-        <height>361</height>
+        <height>429</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout">
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_46">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Ville :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_44">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Rue :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_45">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Code Postal :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_43">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Numéro :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="1">
+        <widget class="QLineEdit" name="etudiantPromo">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="0">
+        <widget class="QLabel" name="label_9">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Montant Scolarité :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <widget class="QLabel" name="label_10">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Stage Entreprise :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="12" column="1">
+        <widget class="QLineEdit" name="etudiantCV">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="13" column="1">
+        <widget class="QLineEdit" name="etudiantMontantScolarite">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="1">
+        <widget class="QLineEdit" name="etudiantStageEntreprise">
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Date de naissance :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="10" column="1">
+        <widget class="QDateEdit" name="etudiantDateNaissance"/>
+       </item>
+       <item row="12" column="0">
+        <widget class="QLabel" name="label_8">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>CV :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="11" column="0">
+        <widget class="QLabel" name="label_6">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>Promo :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>true</underline>
+          </font>
+         </property>
+         <property name="text">
+          <string>E-mail :</string>
+         </property>
+        </widget>
+       </item>
        <item row="0" column="0">
         <widget class="QLabel" name="label">
          <property name="font">
@@ -550,11 +727,11 @@
          </property>
         </widget>
        </item>
-       <item row="3" column="1">
+       <item row="9" column="1">
         <widget class="QLineEdit" name="etudiantEmail"/>
        </item>
-       <item row="0" column="1">
-        <widget class="QLineEdit" name="etudiantNom"/>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="etudiantPrenom"/>
        </item>
        <item row="1" column="0">
         <widget class="QLabel" name="label_2">
@@ -571,10 +748,7 @@
          </property>
         </widget>
        </item>
-       <item row="1" column="1">
-        <widget class="QLineEdit" name="etudiantPrenom"/>
-       </item>
-       <item row="2" column="0">
+       <item row="8" column="0">
         <widget class="QLabel" name="label_4">
          <property name="font">
           <font>
@@ -589,11 +763,14 @@
          </property>
         </widget>
        </item>
-       <item row="2" column="1">
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="etudiantNom"/>
+       </item>
+       <item row="8" column="1">
         <widget class="QLineEdit" name="etudiantTelephone"/>
        </item>
-       <item row="6" column="0">
-        <widget class="QLabel" name="label_8">
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_42">
          <property name="font">
           <font>
            <pointsize>10</pointsize>
@@ -603,115 +780,38 @@
           </font>
          </property>
          <property name="text">
-          <string>CV :</string>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <widget class="QLabel" name="label_5">
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-           <underline>true</underline>
-          </font>
-         </property>
-         <property name="text">
-          <string>E-mail :</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <widget class="QLabel" name="label_3">
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-           <underline>true</underline>
-          </font>
-         </property>
-         <property name="text">
-          <string>Date de naissance :</string>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="0">
-        <widget class="QLabel" name="label_6">
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-           <underline>true</underline>
-          </font>
-         </property>
-         <property name="text">
-          <string>Promo :</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="1">
-        <widget class="QDateEdit" name="etudiantDateNaissance"/>
-       </item>
-       <item row="6" column="1">
-        <widget class="QLineEdit" name="etudiantCV">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="1">
-        <widget class="QLineEdit" name="etudiantPromo">
-         <property name="text">
-          <string/>
+          <string>Adresse :</string>
          </property>
         </widget>
        </item>
        <item row="7" column="0">
-        <widget class="QLabel" name="label_9">
+        <widget class="QLabel" name="label_47">
          <property name="font">
           <font>
-           <pointsize>10</pointsize>
            <weight>75</weight>
            <bold>true</bold>
            <underline>true</underline>
           </font>
          </property>
          <property name="text">
-          <string>Montant Scolarité :</string>
+          <string>Pays :</string>
          </property>
         </widget>
+       </item>
+       <item row="4" column="1">
+        <widget class="QLineEdit" name="etudiantTelephone_3"/>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="etudiantTelephone_4"/>
+       </item>
+       <item row="6" column="1">
+        <widget class="QLineEdit" name="etudiantTelephone_5"/>
        </item>
        <item row="7" column="1">
-        <widget class="QLineEdit" name="etudiantMontantScolarite">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
+        <widget class="QLineEdit" name="etudiantTelephone_6"/>
        </item>
-       <item row="8" column="0">
-        <widget class="QLabel" name="label_10">
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-           <weight>75</weight>
-           <bold>true</bold>
-           <underline>true</underline>
-          </font>
-         </property>
-         <property name="text">
-          <string>Stage Entreprise :</string>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="1">
-        <widget class="QLineEdit" name="etudiantStageEntreprise">
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
+       <item row="3" column="1">
+        <widget class="QSpinBox" name="spinBox"/>
        </item>
       </layout>
      </widget>
