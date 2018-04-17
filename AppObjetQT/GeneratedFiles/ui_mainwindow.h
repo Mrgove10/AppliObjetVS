@@ -165,7 +165,7 @@ public:
         tab_6->setObjectName(QStringLiteral("tab_6"));
         gridLayoutWidget_3 = new QWidget(tab_6);
         gridLayoutWidget_3->setObjectName(QStringLiteral("gridLayoutWidget_3"));
-        gridLayoutWidget_3->setGeometry(QRect(10, 10, 471, 611));
+        gridLayoutWidget_3->setGeometry(QRect(10, 10, 471, 632));
         gridLayout_3 = new QGridLayout(gridLayoutWidget_3);
         gridLayout_3->setSpacing(7);
         gridLayout_3->setContentsMargins(11, 11, 11, 11);
@@ -367,24 +367,28 @@ public:
         font2.setUnderline(true);
         font2.setWeight(75);
         label_37->setFont(font2);
+        label_37->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_37, 4, 0, 1, 1);
 
         label_38 = new QLabel(gridLayoutWidget_3);
         label_38->setObjectName(QStringLiteral("label_38"));
         label_38->setFont(font2);
+        label_38->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_38, 5, 0, 1, 1);
 
         label_39 = new QLabel(gridLayoutWidget_3);
         label_39->setObjectName(QStringLiteral("label_39"));
         label_39->setFont(font2);
+        label_39->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_39, 6, 0, 1, 1);
 
         label_40 = new QLabel(gridLayoutWidget_3);
         label_40->setObjectName(QStringLiteral("label_40"));
         label_40->setFont(font2);
+        label_40->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_40, 7, 0, 1, 1);
 
@@ -400,6 +404,7 @@ public:
         label_41 = new QLabel(gridLayoutWidget_3);
         label_41->setObjectName(QStringLiteral("label_41"));
         label_41->setFont(font2);
+        label_41->setAlignment(Qt::AlignCenter);
 
         gridLayout_3->addWidget(label_41, 8, 0, 1, 1);
 
@@ -452,24 +457,28 @@ public:
         label_46 = new QLabel(gridLayoutWidget);
         label_46->setObjectName(QStringLiteral("label_46"));
         label_46->setFont(font2);
+        label_46->setAlignment(Qt::AlignCenter);
 
         gridLayout->addWidget(label_46, 6, 0, 1, 1);
 
         label_44 = new QLabel(gridLayoutWidget);
         label_44->setObjectName(QStringLiteral("label_44"));
         label_44->setFont(font2);
+        label_44->setAlignment(Qt::AlignCenter);
 
         gridLayout->addWidget(label_44, 4, 0, 1, 1);
 
         label_45 = new QLabel(gridLayoutWidget);
         label_45->setObjectName(QStringLiteral("label_45"));
         label_45->setFont(font2);
+        label_45->setAlignment(Qt::AlignCenter);
 
         gridLayout->addWidget(label_45, 5, 0, 1, 1);
 
         label_43 = new QLabel(gridLayoutWidget);
         label_43->setObjectName(QStringLiteral("label_43"));
         label_43->setFont(font2);
+        label_43->setAlignment(Qt::AlignCenter);
 
         gridLayout->addWidget(label_43, 3, 0, 1, 1);
 
@@ -582,6 +591,7 @@ public:
         label_47 = new QLabel(gridLayoutWidget);
         label_47->setObjectName(QStringLiteral("label_47"));
         label_47->setFont(font2);
+        label_47->setAlignment(Qt::AlignCenter);
 
         gridLayout->addWidget(label_47, 7, 0, 1, 1);
 
@@ -628,6 +638,7 @@ public:
         label_51 = new QLabel(gridLayoutWidget_2);
         label_51->setObjectName(QStringLiteral("label_51"));
         label_51->setFont(font2);
+        label_51->setAlignment(Qt::AlignCenter);
 
         gridLayout_2->addWidget(label_51, 5, 0, 1, 1);
 
@@ -718,24 +729,28 @@ public:
         label_52 = new QLabel(gridLayoutWidget_2);
         label_52->setObjectName(QStringLiteral("label_52"));
         label_52->setFont(font2);
+        label_52->setAlignment(Qt::AlignCenter);
 
         gridLayout_2->addWidget(label_52, 6, 0, 1, 1);
 
         label_49 = new QLabel(gridLayoutWidget_2);
         label_49->setObjectName(QStringLiteral("label_49"));
         label_49->setFont(font2);
+        label_49->setAlignment(Qt::AlignCenter);
 
         gridLayout_2->addWidget(label_49, 3, 0, 1, 1);
 
         label_50 = new QLabel(gridLayoutWidget_2);
         label_50->setObjectName(QStringLiteral("label_50"));
         label_50->setFont(font2);
+        label_50->setAlignment(Qt::AlignCenter);
 
         gridLayout_2->addWidget(label_50, 4, 0, 1, 1);
 
         label_53 = new QLabel(gridLayoutWidget_2);
         label_53->setObjectName(QStringLiteral("label_53"));
         label_53->setFont(font2);
+        label_53->setAlignment(Qt::AlignCenter);
 
         gridLayout_2->addWidget(label_53, 7, 0, 1, 1);
 
@@ -786,7 +801,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
