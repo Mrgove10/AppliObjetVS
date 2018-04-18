@@ -94,7 +94,7 @@ void MainWindow::on_adminAjout_clicked()
         ui->adminSalaire->text().toFloat(),
         ui->adminDateVirementSalaire->text().toStdString(),
         ui->adminCongeRestant->text().toInt());
-	createCSV(AdminActuel->getNom(), AdminActuel->getPrenom());
+	updateCSV(AdminActuel->getNom(), AdminActuel->getPrenom());
 	AffichageList();
         /*createCSV(AdminActuel->getNom(),
                   AdminActuel->getPrenom(),
@@ -131,7 +131,13 @@ void MainWindow::createCSV(string param, string param2)
 	myfile.open("DataAdministration.csv");
 	myfile << "Nom,Prenom";
 	myfile << '\n';
-	myfile.open("test.txt", std::ios_base::app);
+	myfile.close();
+}
+
+void MainWindow::updateCSV(string param, string param2)
+{
+	ofstream myfile;
+	myfile.open("DataAdministration.csv", std::ios_base::app);
 	myfile << param << ',' << param2 << "\n";
 	myfile.close();
 }
@@ -139,6 +145,7 @@ void MainWindow::createCSV(string param, string param2)
 void MainWindow::AffichageList()
 {
 	string line;
+	ui->listWidget->clear();
 	ifstream myfile("DataAdministration.csv");
 	if (myfile.is_open())
 	{
@@ -153,8 +160,6 @@ void MainWindow::AffichageList()
 		}
 		myfile.close();
 	}
-
-
 }
 
 string MainWindow::readCSV()
@@ -167,8 +172,7 @@ string MainWindow::readCSV()
 		{
 			cout << line << '\n';
 		}
-		myfile.close();
-		
+		myfile.close();		
 	}
 
 	else cout << "Unable to open file";

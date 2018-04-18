@@ -67,10 +67,28 @@
     <ClCompile Include="Administration.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
+    <ClCompile Include="formulaire2.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liste.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="formulaire.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ebru1.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ebru.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="mainwindow.h">
       <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="statut.h">
+      <Filter>Generated Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +130,9 @@
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="Administration.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ebru1.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
   </ItemGroup>

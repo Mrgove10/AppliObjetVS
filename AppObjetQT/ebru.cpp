@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+/*#include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 #include "ModuleCours.h".h"
@@ -19,7 +19,7 @@ void MainWindow::on_pushButton_clicked()
                ui ->HeuresTotales -> text().toFloat());
     createCSV (ModuleCoursActuel->getIntitule(), ModuleCoursActuel->geHeuresTotales());
 }
-
+*/
 
 
 

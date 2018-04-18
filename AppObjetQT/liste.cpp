@@ -1,4 +1,4 @@
-void MainWindow::
+/*void MainWindow::
 void MainWindow ::MainWindow (QWidget*parent) :
     QDialog (parent),
     ui (new Ui::MainWindow)
@@ -6,9 +6,9 @@ void MainWindow ::MainWindow (QWidget*parent) :
     ui->setupUi(this);
     ui->comboBox -> additem("AutoEntrepreuneur")
     ui->comboBox -> additem("Employe")
-
-
-
+	*/
+		
+/*
 
  #include <QApplication>
  #include <QtWidgets>
@@ -37,6 +37,6 @@ void MainWindow ::MainWindow (QWidget*parent) :
             return app.exec();
         }
 
-
+		*/
 
 

@@ -191,8 +191,13 @@
     <ClCompile Include="Administration.cpp" />
     <ClCompile Include="Adresse.cpp" />
     <ClCompile Include="AutoEntrepreneur.cpp" />
+    <ClCompile Include="ebru.cpp" />
+    <ClCompile Include="ebru1.cpp" />
     <ClCompile Include="Employe.cpp" />
     <ClCompile Include="Etudiant.cpp" />
+    <ClCompile Include="formulaire.cpp" />
+    <ClCompile Include="formulaire2.cpp" />
+    <ClCompile Include="liste.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainwindow.cpp" />
     <ClCompile Include="ModuleCours.cpp" />
@@ -229,11 +234,13 @@
     <ClInclude Include="Administration.h" />
     <ClInclude Include="Adresse.h" />
     <ClInclude Include="Autoentrepreneur.h" />
+    <ClInclude Include="ebru1.h" />
     <ClInclude Include="Employe.h" />
     <ClInclude Include="Etudiant.h" />
     <ClInclude Include="ModuleCours.h" />
     <ClInclude Include="Prof.h" />
     <ClInclude Include="RelevéNotes.h" />
+    <QtMoc Include="statut.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -472,7 +472,7 @@ public:
         label_34 = new QLabel(tab_6);
         label_34->setObjectName(QStringLiteral("label_34"));
         label_34->setGeometry(QRect(500, 60, 291, 401));
-        label_34->setPixmap(QPixmap(QString::fromUtf8("C:/Users/Utilisateur/Pictures/admin_v01D_support.png")));
+        label_34->setPixmap(QPixmap(QString::fromUtf8("../../../../../Utilisateur/Pictures/admin_v01D_support.png")));
         tabWidget->addTab(tab_6, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
@@ -669,7 +669,7 @@ public:
         label_32 = new QLabel(tab_4);
         label_32->setObjectName(QStringLiteral("label_32"));
         label_32->setGeometry(QRect(490, 10, 301, 361));
-        label_32->setPixmap(QPixmap(QString::fromUtf8("C:/Users/Utilisateur/Pictures/Universit\303\251.jpg")));
+        label_32->setPixmap(QPixmap(QString::fromUtf8("../../../../../Utilisateur/Pictures/Universit\303\251.jpg")));
         tabWidget->addTab(tab_4, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QStringLiteral("tab_3"));
@@ -678,7 +678,7 @@ public:
         tab_5->setObjectName(QStringLiteral("tab_5"));
         gridLayoutWidget_2 = new QWidget(tab_5);
         gridLayoutWidget_2->setObjectName(QStringLiteral("gridLayoutWidget_2"));
-        gridLayoutWidget_2->setGeometry(QRect(10, 10, 471, 397));
+        gridLayoutWidget_2->setGeometry(QRect(20, 10, 461, 291));
         gridLayout_2 = new QGridLayout(gridLayoutWidget_2);
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
@@ -834,7 +834,7 @@ public:
         label_33 = new QLabel(tab_5);
         label_33->setObjectName(QStringLiteral("label_33"));
         label_33->setGeometry(QRect(490, 10, 351, 281));
-        label_33->setPixmap(QPixmap(QString::fromUtf8("C:/Users/Utilisateur/Pictures/Coaching 5.jpg")));
+        label_33->setPixmap(QPixmap(QString::fromUtf8("../../../../../Utilisateur/Pictures/Coaching 5.jpg")));
         tabWidget->addTab(tab_5, QString());
         tab_7 = new QWidget();
         tab_7->setObjectName(QStringLiteral("tab_7"));
@@ -842,7 +842,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1400, 25));
+        menuBar->setGeometry(QRect(0, 0, 1022, 17));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -853,7 +853,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

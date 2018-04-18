@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+/*#include "mainwindow.h"
 #include "ui_mainwindow.h"
 
 #include "AutoEntrepreneur.h".h"
@@ -19,3 +19,4 @@ void MainWindow::on_pushButton_clicked()
     createCSV (ModuleCoursActuel->getIntitule(), ModuleCoursActuel->geHeuresTotales());
 }
 
+*/
