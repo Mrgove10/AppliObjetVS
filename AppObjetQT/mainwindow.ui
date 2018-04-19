@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -548,8 +548,8 @@
      <widget class="QPushButton" name="adminAjout">
       <property name="geometry">
        <rect>
-        <x>540</x>
-        <y>590</y>
+        <x>270</x>
+        <y>710</y>
         <width>191</width>
         <height>28</height>
        </rect>
@@ -571,7 +571,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../Utilisateur/Pictures/admin_v01D_support.png</pixmap>
+       <pixmap>../../../../Utilisateur/Pictures/admin_v01D_support.png</pixmap>
       </property>
      </widget>
     </widget>
@@ -585,30 +585,10 @@
      <widget class="QListWidget" name="listWidget">
       <property name="geometry">
        <rect>
-        <x>230</x>
-        <y>430</y>
-        <width>391</width>
-        <height>231</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QColumnView" name="columnView_2">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>280</y>
-        <width>256</width>
-        <height>192</height>
-       </rect>
-      </property>
-     </widget>
-     <widget class="QTableView" name="tableView_2">
-      <property name="geometry">
-       <rect>
-        <x>320</x>
-        <y>90</y>
-        <width>256</width>
-        <height>192</height>
+        <x>10</x>
+        <y>10</y>
+        <width>1361</width>
+        <height>771</height>
        </rect>
       </property>
      </widget>
@@ -952,7 +932,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../Utilisateur/Pictures/Université.jpg</pixmap>
+       <pixmap>../../../../Utilisateur/Pictures/Université.jpg</pixmap>
       </property>
      </widget>
     </widget>
@@ -971,7 +951,7 @@
         <x>20</x>
         <y>10</y>
         <width>461</width>
-        <height>291</height>
+        <height>397</height>
        </rect>
       </property>
       <layout class="QGridLayout" name="gridLayout_2">
@@ -1256,7 +1236,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap>../../../../../Utilisateur/Pictures/Coaching 5.jpg</pixmap>
+       <pixmap>../../../../Utilisateur/Pictures/Coaching 5.jpg</pixmap>
       </property>
      </widget>
     </widget>
@@ -1272,8 +1252,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1022</width>
-     <height>17</height>
+     <width>1400</width>
+     <height>25</height>
     </rect>
    </property>
   </widget>

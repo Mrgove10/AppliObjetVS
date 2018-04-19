@@ -13,7 +13,6 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QColumnView>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QDateEdit>
 #include <QtWidgets/QGridLayout>
@@ -27,7 +26,6 @@
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
-#include <QtWidgets/QTableView>
 #include <QtWidgets/QToolBar>
 #include <QtWidgets/QWidget>
 
@@ -92,8 +90,6 @@ public:
     QLabel *label_34;
     QWidget *tab_2;
     QListWidget *listWidget;
-    QColumnView *columnView_2;
-    QTableView *tableView_2;
     QWidget *tab_4;
     QPushButton *etudiantAjout;
     QWidget *gridLayoutWidget;
@@ -468,24 +464,18 @@ public:
 
         adminAjout = new QPushButton(tab_6);
         adminAjout->setObjectName(QStringLiteral("adminAjout"));
-        adminAjout->setGeometry(QRect(540, 590, 191, 28));
+        adminAjout->setGeometry(QRect(270, 710, 191, 28));
         label_34 = new QLabel(tab_6);
         label_34->setObjectName(QStringLiteral("label_34"));
         label_34->setGeometry(QRect(500, 60, 291, 401));
-        label_34->setPixmap(QPixmap(QString::fromUtf8("../../../../../Utilisateur/Pictures/admin_v01D_support.png")));
+        label_34->setPixmap(QPixmap(QString::fromUtf8("../../../../Utilisateur/Pictures/admin_v01D_support.png")));
         tabWidget->addTab(tab_6, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
         tab_2->setEnabled(true);
         listWidget = new QListWidget(tab_2);
         listWidget->setObjectName(QStringLiteral("listWidget"));
-        listWidget->setGeometry(QRect(230, 430, 391, 231));
-        columnView_2 = new QColumnView(tab_2);
-        columnView_2->setObjectName(QStringLiteral("columnView_2"));
-        columnView_2->setGeometry(QRect(290, 280, 256, 192));
-        tableView_2 = new QTableView(tab_2);
-        tableView_2->setObjectName(QStringLiteral("tableView_2"));
-        tableView_2->setGeometry(QRect(320, 90, 256, 192));
+        listWidget->setGeometry(QRect(10, 10, 1361, 771));
         tabWidget->addTab(tab_2, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName(QStringLiteral("tab_4"));
@@ -669,7 +659,7 @@ public:
         label_32 = new QLabel(tab_4);
         label_32->setObjectName(QStringLiteral("label_32"));
         label_32->setGeometry(QRect(490, 10, 301, 361));
-        label_32->setPixmap(QPixmap(QString::fromUtf8("../../../../../Utilisateur/Pictures/Universit\303\251.jpg")));
+        label_32->setPixmap(QPixmap(QString::fromUtf8("../../../../Utilisateur/Pictures/Universit\303\251.jpg")));
         tabWidget->addTab(tab_4, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName(QStringLiteral("tab_3"));
@@ -678,7 +668,7 @@ public:
         tab_5->setObjectName(QStringLiteral("tab_5"));
         gridLayoutWidget_2 = new QWidget(tab_5);
         gridLayoutWidget_2->setObjectName(QStringLiteral("gridLayoutWidget_2"));
-        gridLayoutWidget_2->setGeometry(QRect(20, 10, 461, 291));
+        gridLayoutWidget_2->setGeometry(QRect(20, 10, 461, 397));
         gridLayout_2 = new QGridLayout(gridLayoutWidget_2);
         gridLayout_2->setSpacing(6);
         gridLayout_2->setContentsMargins(11, 11, 11, 11);
@@ -834,7 +824,7 @@ public:
         label_33 = new QLabel(tab_5);
         label_33->setObjectName(QStringLiteral("label_33"));
         label_33->setGeometry(QRect(490, 10, 351, 281));
-        label_33->setPixmap(QPixmap(QString::fromUtf8("../../../../../Utilisateur/Pictures/Coaching 5.jpg")));
+        label_33->setPixmap(QPixmap(QString::fromUtf8("../../../../Utilisateur/Pictures/Coaching 5.jpg")));
         tabWidget->addTab(tab_5, QString());
         tab_7 = new QWidget();
         tab_7->setObjectName(QStringLiteral("tab_7"));
@@ -842,7 +832,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1022, 17));
+        menuBar->setGeometry(QRect(0, 0, 1400, 25));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -853,7 +843,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

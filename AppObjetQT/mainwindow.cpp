@@ -94,29 +94,31 @@ void MainWindow::on_adminAjout_clicked()
         ui->adminSalaire->text().toFloat(),
         ui->adminDateVirementSalaire->text().toStdString(),
         ui->adminCongeRestant->text().toInt());
-	updateCSV(AdminActuel->getNom(), AdminActuel->getPrenom());
-	AffichageList();
-        /*createCSV(AdminActuel->getNom(),
-                  AdminActuel->getPrenom(),
-                  AdresseActuelle->getNumeroRue(),
-                  AdresseActuelle->getRue(),
-                  AdresseActuelle->getCodePostal(),
-                  AdresseActuelle->getVille(),
-                  AdresseActuelle->getPays(),
-                  AdminActuel->getEmail(),
-                  AdminActuel->getTelephone(),
-                  AdminActuel->getDateNaissance(),
-                  AdminActuel->getNumCompteBancaire(),
-                  AdminActuel->getEmailPro(),
-                  AdminActuel->getTelFixPro(),
-                  AdminActuel->getTelMobilePro(),
-                  AdminActuel->getHoraires(),
-                  AdminActuel->getContrat(),
-                  AdminActuel->getTypeDePoste(),
-                  AdminActuel->getSalaire(),
-                  AdminActuel->getDateVirementSalaire(),
-                  AdminActuel->getCongeRestant());*/
+		AffichageList();
 
+		updateCSV(
+		AdminActuel->getRole(),
+		AdminActuel->getNom(),
+	  AdminActuel->getPrenom(),
+			/*
+	  AdresseActuelle->getNumeroRue(),
+	  AdresseActuelle->getRue(),
+	  AdresseActuelle->getCodePostal(),
+	  AdresseActuelle->getVille(),
+	  AdresseActuelle->getPays(),*/
+	  AdminActuel->getEmail(),
+	  AdminActuel->getTelephone(),
+	  AdminActuel->getDateNaissance(),
+	  AdminActuel->getNumCompteBancaire(),
+	  AdminActuel->getEmailPro(),
+	  AdminActuel->getTelFixPro(),
+	  AdminActuel->getTelMobilePro(),
+	  AdminActuel->getHoraires(),
+	  AdminActuel->getContrat(),
+	  AdminActuel->getTypeDePoste(),
+	  AdminActuel->getSalaire(),
+	  AdminActuel->getDateVirementSalaire(),
+	  AdminActuel->getCongeRestant());
 
 }
 
@@ -125,20 +127,25 @@ void MainWindow::on_pushButton_clicked()
 	//ui->AdminListTextEdit->setText(QString::fromStdString(readCSV()));
 }
 
-void MainWindow::createCSV(string param, string param2)
+void MainWindow::createCSV()
 {
 	ofstream myfile;
 	myfile.open("DataAdministration.csv");
-	myfile << "Nom,Prenom";
+	myfile << "Role,Nom,Prenom,Email,Telephone,Date de Naissance,Numero Compte Bancaire,Email Professionel,Telephone fix Professionel,Telephone mobile Professionel,Horaires,Type de contrat,Type de poste,Salaire,Date virement de salaire,Conges restant";
 	myfile << '\n';
 	myfile.close();
 }
 
-void MainWindow::updateCSV(string param, string param2)
+void MainWindow::updateCSV(string role, string nom, string prenom, string email,
+	int tel, string datenais, int numcombtebanc,
+	string emailpro, int telfixpro, int telmobilpor,
+	float horaires, string contra, string typedepost,
+	float salaire, string datevirementsalaire,
+	int congesRestant)
 {
 	ofstream myfile;
 	myfile.open("DataAdministration.csv", std::ios_base::app);
-	myfile << param << ',' << param2 << "\n";
+	myfile << role <<',' << nom << ',' << prenom << ',' << email<< ',' <<tel<< ',' <<datenais<< ',' <<numcombtebanc<< ',' <<emailpro<< ',' <<telfixpro<< ',' <<telmobilpor<< ',' <<horaires<< ',' <<contra<< ',' <<typedepost<< ',' <<salaire<< ',' <<datevirementsalaire << ','<< congesRestant<<"\n";
 	myfile.close();
 }
 

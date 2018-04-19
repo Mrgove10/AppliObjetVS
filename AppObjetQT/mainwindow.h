@@ -29,8 +29,14 @@ private:
     Ui::MainWindow *ui;
 	void AffichageList();
 
-    void createCSV(string param,string param2);
-	void updateCSV(string param, string param2);
+	//fonction de creation de csv
+	void updateCSV(string role,string nom, string prenom,string email,
+		int tel,string datenais,int numcombtebanc,
+		string emailpro,int telfixpro,int telmobilpor,
+		float horaires, string contra, string typedepost,
+		float salaire, string datevirementsalaire,
+		int congesRestant);
+	void createCSV();
 	string readCSV();
 };
 
