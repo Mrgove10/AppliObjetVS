@@ -27,16 +27,35 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-	void AffichageList();
-
+	void AffichageListAdmins();
+	void AffichageListEtudiants();
+	void AffichageListProfs();
+	
+	void AffichageTotal();
 	//fonction de creation de csv
-	void updateCSV(string role,string nom, string prenom,string email,
+	#pragma region CSVAdmin
+	void updateCSVAdmins(string role,string nom, string prenom,string email,
 		int tel,string datenais,int numcombtebanc,
 		string emailpro,int telfixpro,int telmobilpor,
 		float horaires, string contra, string typedepost,
 		float salaire, string datevirementsalaire,
 		int congesRestant);
-	void createCSV();
+	void createCSVAdmins
+	();
+	#pragma endregion 
+
+	#pragma region CSVEtudians
+	void updateCSVEtudiants(string nom,string prenom,int telephone, 
+		string mail, string datenaissance,string promo,
+		string CV, int montantScolariter, string stageEntreprise);
+	void createCSVEtudiants();
+	#pragma endregion 
+
+	#pragma region CSVProfs
+	void updateCSVProfs();
+	void createCSVProfs();
+	#pragma endregion	
+
 	string readCSV();
 };
 

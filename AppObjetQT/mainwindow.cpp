@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 	readCSV();
-	AffichageList();
+	AffichageTotal();
 }
 
 MainWindow::~MainWindow()
@@ -26,6 +26,7 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+#pragma region Etudiants
 void MainWindow::on_etudiantAjout_clicked()
 {
     Adresse* AdresseEtudiant = new Adresse(
@@ -45,9 +46,54 @@ void MainWindow::on_etudiantAjout_clicked()
         ui->etudiantCV->text().toStdString(),
         ui->etudiantMontantScolarite->text().toInt(),
         ui->etudiantStageEntreprise->text().toStdString());
+
+	AffichageTotal();
+
 }
 
+void MainWindow::AffichageListEtudiants()
+{
+	string line;
+	ui->listWidgetEtudiants->clear();
+	ifstream myfile("Data/DataEtudiants.csv");
+	if (myfile.is_open())
+	{
+		int i;
+		while (getline(myfile, line))
+		{
+			int i;
+			cout << line << '\n';
+			ui->listWidgetEtudiants->addItem(QString::fromStdString(line) /*+ QString::number(i)*/);
+			i++;
 
+		}
+		myfile.close();
+	}
+}
+
+void MainWindow::updateCSVEtudiants(string nom, string prenom, int telephone,
+	string mail, string datenaissance, string promo,
+	string CV, int montantScolariter, string stageEntreprise)
+{
+	//TODO Adresse
+	ofstream myfile;
+	myfile.open("Data/DataEtudiants.csv", std::ios_base::app);
+	myfile << nom <<','<<prenom<<','<<telephone<<','<<mail<<','<<datenaissance<<','<<promo<<','<<CV<<','<<montantScolariter<<','<<stageEntreprise<< "\n";
+	myfile.close();
+}
+
+void MainWindow::createCSVEtudiants()
+{
+	ofstream myfile;
+	myfile.open("Data/DataEtudiants.csv");
+	myfile << "Nom,Prenom,Telephone,Mail,Date de Naissance,Promo,CV,Montant de la Scolariter,Entreprise de Stage";
+	myfile << '\n';
+	myfile.close();
+}
+
+#pragma endregion 
+
+#pragma region Profs
 void MainWindow::on_profAjout_clicked()
 {
     Adresse* AdresseProf = new Adresse(
@@ -57,16 +103,58 @@ void MainWindow::on_profAjout_clicked()
         ui->adminAdresseVille->text().toStdString(),
         ui->adminAdressePays->text().toStdString());
                 
-    Prof* ProfActuel = new Prof(
-        ui->profNom->text().toStdString(),
-        ui->profPrenom->text().toStdString(),
-        ui->profEmail->text().toStdString(),
-        ui->profTelephone->text().toInt(),
-        ui->profDateNaissance->text().toStdString(),
-        ui->profNumCompteBancaire->text().toInt(),
-        ui->profCasierJudiciaire->text().toStdString());
+	Prof* ProfActuel = new Prof(
+		ui->profNom->text().toStdString(),
+		ui->profPrenom->text().toStdString(),
+		ui->profEmail->text().toStdString(),
+		ui->profTelephone->text().toInt(),
+		ui->profDateNaissance->text().toStdString(),
+		ui->profNumCompteBancaire->text().toInt(),
+		ui->profCasierJudiciaire->text().toStdString());
+
+	AffichageTotal();
+
 }
 
+void MainWindow::AffichageListProfs()
+{
+	string line;
+	ui->listWidgetProfs->clear();
+	ifstream myfile("DataAdministration.csv");
+	if (myfile.is_open())
+	{
+		int i;
+		while (getline(myfile, line))
+		{
+			int i;
+			cout << line << '\n';
+			ui->listWidgetProfs->addItem(QString::fromStdString(line) /*+ QString::number(i)*/);
+			i++;
+
+		}
+		myfile.close();
+	}
+}
+
+void MainWindow::updateCSVProfs()
+{
+	ofstream myfile;
+	myfile.open("Data/DataProfs.csv", std::ios_base::app);
+	myfile << "\n";
+	myfile.close();
+}
+
+void MainWindow::createCSVProfs()
+{
+	ofstream myfile;
+	myfile.open("Data/DataProfslephone,Date de Naissance,Numero Compte Bancaire,Email Professionel,Telephone fix Professionel,Telephone mobile Professionel,Horaires,Type de contrat,Type de poste,Salaire,Date virement de salaire,Conges restant");
+	myfile << '\n';
+	myfile.close();
+}
+
+#pragma endregion 
+
+#pragma region Admininstration
 void MainWindow::on_adminAjout_clicked()
 {
     Adresse* AdresseAdmin = new Adresse(
@@ -94,12 +182,13 @@ void MainWindow::on_adminAjout_clicked()
         ui->adminSalaire->text().toFloat(),
         ui->adminDateVirementSalaire->text().toStdString(),
         ui->adminCongeRestant->text().toInt());
-		AffichageList();
+		AffichageTotal();
 
-		updateCSV(
+		updateCSVAdmins(
 		AdminActuel->getRole(),
 		AdminActuel->getNom(),
 	  AdminActuel->getPrenom(),
+			//TODO ICI FAIT LES ADRESSE
 			/*
 	  AdresseActuelle->getNumeroRue(),
 	  AdresseActuelle->getRue(),
@@ -122,21 +211,7 @@ void MainWindow::on_adminAjout_clicked()
 
 }
 
-void MainWindow::on_pushButton_clicked()
-{
-	//ui->AdminListTextEdit->setText(QString::fromStdString(readCSV()));
-}
-
-void MainWindow::createCSV()
-{
-	ofstream myfile;
-	myfile.open("DataAdministration.csv");
-	myfile << "Role,Nom,Prenom,Email,Telephone,Date de Naissance,Numero Compte Bancaire,Email Professionel,Telephone fix Professionel,Telephone mobile Professionel,Horaires,Type de contrat,Type de poste,Salaire,Date virement de salaire,Conges restant";
-	myfile << '\n';
-	myfile.close();
-}
-
-void MainWindow::updateCSV(string role, string nom, string prenom, string email,
+void MainWindow::updateCSVAdmins(string role, string nom, string prenom, string email,
 	int tel, string datenais, int numcombtebanc,
 	string emailpro, int telfixpro, int telmobilpor,
 	float horaires, string contra, string typedepost,
@@ -145,14 +220,14 @@ void MainWindow::updateCSV(string role, string nom, string prenom, string email,
 {
 	ofstream myfile;
 	myfile.open("DataAdministration.csv", std::ios_base::app);
-	myfile << role <<',' << nom << ',' << prenom << ',' << email<< ',' <<tel<< ',' <<datenais<< ',' <<numcombtebanc<< ',' <<emailpro<< ',' <<telfixpro<< ',' <<telmobilpor<< ',' <<horaires<< ',' <<contra<< ',' <<typedepost<< ',' <<salaire<< ',' <<datevirementsalaire << ','<< congesRestant<<"\n";
+	myfile << role << ',' << nom << ',' << prenom << ',' << email << ',' << tel << ',' << datenais << ',' << numcombtebanc << ',' << emailpro << ',' << telfixpro << ',' << telmobilpor << ',' << horaires << ',' << contra << ',' << typedepost << ',' << salaire << ',' << datevirementsalaire << ',' << congesRestant << "\n";
 	myfile.close();
 }
 
-void MainWindow::AffichageList()
+void MainWindow::AffichageListAdmins()
 {
 	string line;
-	ui->listWidget->clear();
+	ui->listWidgetAdmins->clear();
 	ifstream myfile("DataAdministration.csv");
 	if (myfile.is_open())
 	{
@@ -161,13 +236,33 @@ void MainWindow::AffichageList()
 		{
 			int i;
 			cout << line << '\n';
-			ui->listWidget->addItem(QString::fromStdString(line) /*+ QString::number(i)*/);
+			ui->listWidgetAdmins->addItem(QString::fromStdString(line) /*+ QString::number(i)*/);
 			i++;
-			
+
 		}
 		myfile.close();
 	}
 }
+
+void MainWindow::createCSVAdmins()
+{
+	ofstream myfile;
+	myfile.open("Data/DataAdministration.csv");
+	myfile << "Role,Nom,Prenom,Email,Telephone,Date de Naissance,Numero Compte Bancaire,Email Professionel,Telephone fix Professionel,Telephone mobile Professionel,Horaires,Type de contrat,Type de poste,Salaire,Date virement de salaire,Conges restant";
+	myfile << '\n';
+	myfile.close();
+}
+
+#pragma endregion 
+
+void MainWindow::AffichageTotal()
+{
+	AffichageListAdmins();
+	AffichageListEtudiants();
+	AffichageListProfs();
+}
+
+//TODO DUplicate
 
 string MainWindow::readCSV()
 {
