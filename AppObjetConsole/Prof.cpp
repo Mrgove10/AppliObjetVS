@@ -1,4 +1,4 @@
- 
+#include "stdafx.h" 
 #include "Prof.h"
 
 #pragma region Constructeur / Destructeur

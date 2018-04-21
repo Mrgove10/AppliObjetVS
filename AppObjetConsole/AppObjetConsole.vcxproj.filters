@@ -21,12 +21,60 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Etudiant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ModuleCours.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Prof.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RelevéNotes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Administration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Adresse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Autoentrepreneur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Employe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Etudiant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ModuleCours.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Prof.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RelevéNotes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Administration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Adresse.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoEntrepreneur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Employe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

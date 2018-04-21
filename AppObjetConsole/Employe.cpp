@@ -1,4 +1,4 @@
- 
+#include "stdafx.h"  
 #include "Employe.h"
 using namespace std;
 
