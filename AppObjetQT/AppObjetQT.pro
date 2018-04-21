@@ -6,7 +6,6 @@
 
 QT       += core
 QT       += gui
-QT       += sql
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = AppObjetQT
@@ -41,10 +40,6 @@ HEADERS += \
 FORMS += \
         mainwindow.ui \
     statut.ui
-
-win32:CONFIG(release, debug|release): LIBS += -L$$PWD/release/lib/ -llibmysql
-else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/release/lib/ -llibmysqld
-else:unix: LIBS += -L$$PWD/release/lib/ -llibmysql
 
 INCLUDEPATH += $$PWD/release
 DEPENDPATH += $$PWD/release
