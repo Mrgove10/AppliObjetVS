@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppObjetVS", "AppObjetVS\Ap
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppObjetQT", "AppObjetQT\AppObjetQT.vcxproj", "{4CB64224-9D26-370A-98BF-21E4A3D80BA3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppObjetConsole", "AppObjetConsole\AppObjetConsole.vcxproj", "{4288007F-8652-41E4-A730-01F55EBD3AD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -35,12 +37,22 @@ Global
 		{4CB64224-9D26-370A-98BF-21E4A3D80BA3}.Release|x64.ActiveCfg = Release|x64
 		{4CB64224-9D26-370A-98BF-21E4A3D80BA3}.Release|x64.Build.0 = Release|x64
 		{4CB64224-9D26-370A-98BF-21E4A3D80BA3}.Release|x86.ActiveCfg = Release|x64
+		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Debug|ARM.ActiveCfg = Debug|Win32
+		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Debug|x64.ActiveCfg = Debug|x64
+		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Debug|x64.Build.0 = Debug|x64
+		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Debug|x86.ActiveCfg = Debug|Win32
+		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Debug|x86.Build.0 = Debug|Win32
+		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Release|ARM.ActiveCfg = Release|Win32
+		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Release|x64.ActiveCfg = Release|x64
+		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Release|x64.Build.0 = Release|x64
+		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Release|x86.ActiveCfg = Release|Win32
+		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		Qt5Version = AppObjetQT
 		SolutionGuid = {82256910-3B45-46F9-A313-D59A9049BB24}
+		Qt5Version = AppObjetQT
 	EndGlobalSection
 EndGlobal
