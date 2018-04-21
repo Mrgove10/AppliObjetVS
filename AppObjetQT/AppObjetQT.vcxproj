@@ -99,7 +99,7 @@
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <SubSystem>Windows</SubSystem>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalDependencies />
+      <AdditionalDependencies>$(QTDIR)\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalDependencies>
     </Link>
     <Midl>
       <DefaultCharType>Unsigned</DefaultCharType>
@@ -156,7 +156,7 @@
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <SubSystem>Windows</SubSystem>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalDependencies />
+      <AdditionalDependencies>$(QTDIR)\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalDependencies>
     </Link>
     <Midl>
       <DefaultCharType>Unsigned</DefaultCharType>

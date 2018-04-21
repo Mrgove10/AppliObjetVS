@@ -40,8 +40,7 @@ private:
 		float horaires, string contra, string typedepost,
 		float salaire, string datevirementsalaire,
 		int congesRestant);
-	void createCSVAdmins
-	();
+	void createCSVAdmins();
 	#pragma endregion 
 
 	#pragma region CSVEtudians

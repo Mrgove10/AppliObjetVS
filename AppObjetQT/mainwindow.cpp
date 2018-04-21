@@ -5,7 +5,6 @@
 #include "Administration.h"
 #include <QLineEdit>
 #include <iostream>
-#include <QtSql>
 #include <QDebug>
 #include <QCoreApplication>
 #include <QFileDialog>
@@ -120,7 +119,7 @@ void MainWindow::AffichageListProfs()
 {
 	string line;
 	ui->listWidgetProfs->clear();
-	ifstream myfile("DataAdministration.csv");
+	ifstream myfile("DataProfs.csv");
 	if (myfile.is_open())
 	{
 		int i;
