@@ -13,7 +13,7 @@ Etudiant::Etudiant(string nom)
 }
 
 Etudiant::Etudiant(string nom, string prenom, int telephone, string email, 
-	string dateNaissance, int promo, string CV,
+	string dateNaissance, string promo, string CV,
 	float montantScolarite, string stageEntreprise)
 {
 	_nom = nom;

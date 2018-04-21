@@ -12,7 +12,7 @@ class Etudiant
 public:
 	Etudiant();
 	Etudiant(string nom);
-	Etudiant(string nom, string prenom, int telephone, string email, string dateNaissance, int promo, string CV, float montantScolarité, string stageEntreprise);
+	Etudiant(string nom, string prenom, int telephone, string email, string dateNaissance, string promo, string CV, float montantScolarite, string stageEntreprise);
 	~Etudiant();
 
 	string getNom();
