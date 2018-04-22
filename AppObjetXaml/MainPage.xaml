@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="AppObjetXaml.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:AppObjetXaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    RequestedTheme="Dark">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="MB" Content="Button" HorizontalAlignment="Left" Margin="186,116,0,0" VerticalAlignment="Top" Click="MB_Click"/>
+        <TextBlock x:Name="TB1" HorizontalAlignment="Left" Margin="210,249,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TB1_SelectionChanged"/>
+
+    </Grid>
+</Page>

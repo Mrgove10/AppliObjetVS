@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppObjetQT", "AppObjetQT\Ap
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppObjetConsole", "AppObjetConsole\AppObjetConsole.vcxproj", "{4288007F-8652-41E4-A730-01F55EBD3AD0}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AppObjetXaml", "AppObjetXaml\AppObjetXaml.vcxproj", "{BA28C567-B502-4518-9471-C7F756DCD676}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -47,12 +49,30 @@ Global
 		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Release|x64.Build.0 = Release|x64
 		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Release|x86.ActiveCfg = Release|Win32
 		{4288007F-8652-41E4-A730-01F55EBD3AD0}.Release|x86.Build.0 = Release|Win32
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Debug|ARM.ActiveCfg = Debug|ARM
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Debug|ARM.Build.0 = Debug|ARM
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Debug|ARM.Deploy.0 = Debug|ARM
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Debug|x64.ActiveCfg = Debug|x64
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Debug|x64.Build.0 = Debug|x64
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Debug|x64.Deploy.0 = Debug|x64
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Debug|x86.ActiveCfg = Debug|Win32
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Debug|x86.Build.0 = Debug|Win32
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Debug|x86.Deploy.0 = Debug|Win32
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Release|ARM.ActiveCfg = Release|ARM
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Release|ARM.Build.0 = Release|ARM
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Release|ARM.Deploy.0 = Release|ARM
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Release|x64.ActiveCfg = Release|x64
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Release|x64.Build.0 = Release|x64
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Release|x64.Deploy.0 = Release|x64
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Release|x86.ActiveCfg = Release|Win32
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Release|x86.Build.0 = Release|Win32
+		{BA28C567-B502-4518-9471-C7F756DCD676}.Release|x86.Deploy.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {82256910-3B45-46F9-A313-D59A9049BB24}
 		Qt5Version = AppObjetQT
+		SolutionGuid = {82256910-3B45-46F9-A313-D59A9049BB24}
 	EndGlobalSection
 EndGlobal
