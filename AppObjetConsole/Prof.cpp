@@ -6,8 +6,9 @@ Prof::Prof()
 {
 }
 
-Prof::Prof(string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string casierJudiciaire)
+Prof::Prof(string situation, string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string casierJudiciaire)
 {
+	m_situation = situation;
 	m_nom = nom;
 	m_prenom = prenom;
 	m_email = email;
@@ -20,6 +21,15 @@ Prof::Prof(string nom, string prenom, string email, int telephone, string dateNa
 
 Prof::~Prof()
 {
+}
+
+string Prof::getSituation()
+{
+	return m_situation;
+}
+void Prof::setSituation(string situation)
+{
+	m_situation = situation;
 }
 #pragma endregion 
 

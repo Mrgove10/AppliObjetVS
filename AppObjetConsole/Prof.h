@@ -13,8 +13,11 @@ class Prof
 #pragma region Declarations publiques
 public:
 	Prof();
-	Prof(string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string casierJudiciaire);
+	Prof(string situation, string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string casierJudiciaire);
 	~Prof();
+
+	string getSituation();
+	void setSituation(string situation);
 
 	string getNom();
 	void setNom(string nomPara);
@@ -43,6 +46,7 @@ public:
 
 #pragma region Declarations privées
 private:
+	string m_situation;
 	string m_nom;
 	string m_prenom;
 	string m_email;
