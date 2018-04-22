@@ -6,17 +6,34 @@ Prof::Prof()
 {
 }
 
-Prof::Prof(string situation, string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string casierJudiciaire)
+Prof::Prof(string situation, Employe * roleEmploye, string nom, string prenom, Adresse * adresseProf, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string casierJudiciaire)
 {
 	m_situation = situation;
+	_employe = roleEmploye;
 	m_nom = nom;
 	m_prenom = prenom;
+	_adresse = adresseProf;
 	m_email = email;
 	m_telephone = telephone;
 	m_dateNaissance = dateNaissance;
 	m_numCompteBancaire = numeroCompteBancaire;
 	m_casierJudiciare = casierJudiciaire;
 }
+
+Prof::Prof(string situation, AutoEntrepreneur * roleAutoEntrepeneur, string nom, string prenom, Adresse * adresseProf, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string casierJudiciaire)
+{
+	m_situation = situation;
+	_autoEntrepeneur = roleAutoEntrepeneur;
+	m_nom = nom;
+	m_prenom = prenom;
+	_adresse = adresseProf;
+	m_email = email;
+	m_telephone = telephone;
+	m_dateNaissance = dateNaissance;
+	m_numCompteBancaire = numeroCompteBancaire;
+	m_casierJudiciare = casierJudiciaire;
+}
+
 
 
 Prof::~Prof()
@@ -94,4 +111,34 @@ string Prof::getCasierJudiciaire()
 void Prof::setCasierJudiciare(string casierJudiciairePara)
 {
 	m_casierJudiciare = casierJudiciairePara;
+}
+
+Adresse * Prof::getAdresse()
+{
+	return _adresse;
+}
+
+void Prof::setAdresse(Adresse * adressePara)
+{
+	_adresse = adressePara;
+}
+
+AutoEntrepreneur * Prof::getAutoEntrepreneur()
+{
+	return _autoEntrepeneur;
+}
+
+void Prof::setAutoEntrepreneur(AutoEntrepreneur * autoEntrepreneurPara)
+{
+	_autoEntrepeneur = autoEntrepreneurPara;
+}
+
+Employe * Prof::getEmploye()
+{
+	return _employe;
+}
+
+void Prof::setEmploye(Employe * employePara)
+{
+	_employe = employePara;
 }

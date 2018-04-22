@@ -6,18 +6,13 @@ using namespace std;
 Etudiant::Etudiant()
 {
 }
-
-Etudiant::Etudiant(string nom)
-{
-	_nom = nom;
-}
-
-Etudiant::Etudiant(string nom, string prenom, int telephone, string email, 
+Etudiant::Etudiant(string nom, string prenom, Adresse* adresse, int telephone, string email,
 	string dateNaissance, string promo, string CV,
 	float montantScolarite, string stageEntreprise)
 {
 	_nom = nom;
 	_prenom = prenom;
+	_adresse = adresse;
 	_telephone = telephone;
 	_email = email;
 	_dateNaissance = dateNaissance;
@@ -128,5 +123,13 @@ void Etudiant::setStageEntreprise(string stageEntreprisePara)
 }
 void Etudiant::resteAPayer()
 {
+}
+Adresse * Etudiant::getAdresse()
+{
+	return _adresse;
+}
+void Etudiant::setAdresse(Adresse * adressePara)
+{
+	_adresse = adressePara;
 }
 #pragma endregion

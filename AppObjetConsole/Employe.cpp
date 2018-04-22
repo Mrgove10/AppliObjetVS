@@ -7,9 +7,10 @@ Employe::Employe()
 {
 }
 
-Employe::Employe(string societeEmploye)
+Employe::Employe(string societeEmploye, Adresse* adresseSocieteEmploye)
 {
 	_societeEmploye = societeEmploye;
+	_adresseSocieteEmploye = adresseSocieteEmploye;
 }
 
 
@@ -29,5 +30,13 @@ string Employe::getSocieteEmploye()
 void Employe::setSocieteEmploye(string societeEmployePara)
 {
 	_societeEmploye = societeEmployePara;
+}
+Adresse * Employe::getAdresseSocieteEmploye()
+{
+	return _adresseSocieteEmploye;
+}
+void Employe::setAdresseSocieteEmploye(Adresse * adresseSocieteEmploye)
+{
+	_adresseSocieteEmploye = adresseSocieteEmploye;
 }
 #pragma endregion

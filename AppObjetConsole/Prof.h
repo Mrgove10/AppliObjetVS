@@ -3,17 +3,20 @@
 #include <vector>
 #include "ModuleCours.h"
 #include "Adresse.h"
+#include "Autoentrepreneur.h"
 using namespace std;
 class ModuleCours;
 class Adresse;
 class Employe;
+class AutoEntrepreneur;
 
 class Prof
 {
 #pragma region Declarations publiques
 public:
 	Prof();
-	Prof(string situation, string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string casierJudiciaire);
+	Prof(string situation, Employe* roleEmploye, string nom, string prenom, Adresse* adresseProf, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string casierJudiciaire);
+	Prof(string situation, AutoEntrepreneur* roleAutoEntrepeneur, string nom, string prenom, Adresse* adresseProf, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string casierJudiciaire);
 	~Prof();
 
 	string getSituation();
@@ -40,6 +43,15 @@ public:
 	string getCasierJudiciaire();
 	void setCasierJudiciare(string casierJudiciairePara);
 
+	Adresse* getAdresse();
+	void setAdresse(Adresse* adressePara);
+
+	AutoEntrepreneur* getAutoEntrepreneur();
+	void setAutoEntrepreneur(AutoEntrepreneur* autoEntrepreneurPara);
+
+	Employe* getEmploye();
+	void setEmploye(Employe* employePara);
+
 	
 
 #pragma endregion
@@ -55,6 +67,8 @@ private:
 	int m_numCompteBancaire;
 	vector<ModuleCours*> _moduleSEnseigner;
 	Adresse* _adresse;
+	AutoEntrepreneur* _autoEntrepeneur;
+	Employe* _employe;
 	string m_casierJudiciare;
 
 #pragma endregion

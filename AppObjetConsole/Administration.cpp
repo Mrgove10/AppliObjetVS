@@ -6,11 +6,12 @@ Administration::Administration()
 {
 }
 
-Administration::Administration(string role, string nom, string prenom, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string emailPro, int telephoneFix, int telephoneMobile, float horaires, string contrat, string typeDePoste, float salaire, string dateVirementSalaire, int congeRestant)
+Administration::Administration(string role, string nom, string prenom, Adresse* adminAdresse, string email, int telephone, string dateNaissance, int numeroCompteBancaire, string emailPro, int telephoneFix, int telephoneMobile, float horaires, string contrat, string typeDePoste, float salaire, string dateVirementSalaire, int congeRestant)
 {
 	m_role = role;
 	m_nom = nom;
 	m_prenom = prenom;
+	m_adminAdresse = adminAdresse;
 	m_email = email;
 	m_telephone = telephone;
 	m_dateNaissance = dateNaissance;
@@ -29,6 +30,16 @@ Administration::Administration(string role, string nom, string prenom, string em
 
 Administration::~Administration()
 {
+}
+
+Adresse * Administration::getAdresse()
+{
+	return m_adminAdresse;
+}
+
+void Administration::setAdresse(Adresse * adminAdresse)
+{
+	m_adminAdresse = adminAdresse;
 }
 
 string Administration::getRole()

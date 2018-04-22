@@ -11,8 +11,7 @@ class Etudiant
 #pragma region Declarations publiques
 public:
 	Etudiant();
-	Etudiant(string nom);
-	Etudiant(string nom, string prenom, int telephone, string email, string dateNaissance, string promo, string CV, float montantScolarite, string stageEntreprise);
+	Etudiant(string nom, string prenom, Adresse* adresse, int telephone, string email, string dateNaissance, string promo, string CV, float montantScolarite, string stageEntreprise);
 	~Etudiant();
 
 	string getNom();
@@ -43,6 +42,9 @@ public:
 	void setStageEntreprise(string stageEntreprisePara);
 
 	void resteAPayer();
+
+	Adresse* getAdresse();
+	void setAdresse(Adresse* adressePara);
 
 #pragma endregion
 

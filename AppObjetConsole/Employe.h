@@ -10,11 +10,14 @@ class Employe : public Prof
 #pragma region Declarations publiques
 public:
 	Employe();
-	Employe(string societeEmploye);
+	Employe(string societeEmploye, Adresse* adresseSocieteEmploye);
 	~Employe();
 
 	string getSocieteEmploye();
 	void setSocieteEmploye(string societeEmploye);
+
+	Adresse* getAdresseSocieteEmploye();
+	void setAdresseSocieteEmploye(Adresse* adresseSocieteEmploye);
 
 #pragma endregion
 

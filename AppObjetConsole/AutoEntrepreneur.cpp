@@ -7,9 +7,10 @@ AutoEntrepreneur::AutoEntrepreneur()
 {
 }
 
-AutoEntrepreneur::AutoEntrepreneur(string siren)
+AutoEntrepreneur::AutoEntrepreneur(string siren, Adresse* autoAdresse)
 {
 	_sirens = siren;
+	_adresse = autoAdresse;
 }
 
 
@@ -27,5 +28,13 @@ string AutoEntrepreneur::getSirens()
 void AutoEntrepreneur::setSirens(string sirensPara)
 {
 	_sirens = sirensPara;
+}
+Adresse * AutoEntrepreneur::getAutoAdresse()
+{
+	return _adresse;
+}
+void AutoEntrepreneur::setAutoAdresse(Adresse * autoAdresse)
+{
+	_adresse = autoAdresse;
 }
 #pragma endregion
