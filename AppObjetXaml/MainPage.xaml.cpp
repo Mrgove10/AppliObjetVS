@@ -29,6 +29,22 @@ MainPage::MainPage()
 
 void AppObjetXaml::MainPage::MB_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-	TB1.Text = "hello";
+
 }
 
+void AppObjetXaml::MainPage::TextBox_TextChanged(Platform::Object^ sender, Windows::UI::Xaml::Controls::TextChangedEventArgs^ e)
+{
+
+}
+
+
+void AppObjetXaml::MainPage::TB1_SelectionChanged(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+
+}
+
+
+void AppObjetXaml::MainPage::Button_Admininstration_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	GridAdmininstration->Visibility = Windows::UI::Xaml::Visibility::Collapsed; ;
+}

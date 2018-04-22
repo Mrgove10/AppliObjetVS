@@ -11,8 +11,12 @@ namespace Windows {
     namespace UI {
         namespace Xaml {
             namespace Controls {
+                ref class Grid;
                 ref class Button;
+                ref class ListView;
                 ref class TextBlock;
+                ref class TextBox;
+                ref class DatePicker;
             }
         }
     }
@@ -33,8 +37,54 @@ namespace AppObjetXaml
     private:
         bool _contentLoaded;
     
-        private: ::Windows::UI::Xaml::Controls::Button^ MB;
-        private: ::Windows::UI::Xaml::Controls::TextBlock^ TB1;
+        private: ::Windows::UI::Xaml::Controls::Grid^ GridAdmininstration;
+        private: ::Windows::UI::Xaml::Controls::Button^ AdministrationMainButton;
+        private: ::Windows::UI::Xaml::Controls::ListView^ AdmininstrationListView;
+        private: ::Windows::UI::Xaml::Controls::Button^ EudiantsMainButton;
+        private: ::Windows::UI::Xaml::Controls::Button^ ProfsMainButton;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextRole;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryRole;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextNom;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryNom;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextPrenom;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryPrenom;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextAdressSEparation;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextAdressNumero;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryAdressNumero;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextAdressRue;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryAdressRue;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextAdressCodePostal;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryAdressCodePostal;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextAdressVille;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryAdressVille;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextAdressPays;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryAdressPays;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextTelPerso;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryTelPerso;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextEmailPerso;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryEmailPerso;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextDateNaissance;
+        private: ::Windows::UI::Xaml::Controls::DatePicker^ AdministrationEntryDateNaissance;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextNumCompteBanc;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryNumCompteBanc;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTexEmailPro;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryEmailPro;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextTelFixPro;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryTelFixPro;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextTelMobPro;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryTelMobPro;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextHoraires;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryHoraires;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextContract;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryContract;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextTypePoste;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryTypePoste;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextSalaire;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntrySalaire;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextDateVirementSalaire;
+        private: ::Windows::UI::Xaml::Controls::DatePicker^ AdministrationEntryDateVirementSalaire;
+        private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextCongesRestant;
+        private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryTelCongesRestant;
     };
 }
 

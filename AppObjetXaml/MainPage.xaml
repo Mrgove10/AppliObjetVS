@@ -2,15 +2,99 @@
     x:Class="AppObjetXaml.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:AppObjetXaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    RequestedTheme="Dark">
+    RequestedTheme="Default">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="MB" Content="Button" HorizontalAlignment="Left" Margin="186,116,0,0" VerticalAlignment="Top" Click="MB_Click"/>
-        <TextBlock x:Name="TB1" HorizontalAlignment="Left" Margin="210,249,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="TB1_SelectionChanged"/>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1600" Height="899">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="279*"/>
+            <ColumnDefinition Width="1321*"/>
+        </Grid.ColumnDefinitions>
+        <Grid x:Name="GridAdmininstration" HorizontalAlignment="Left" Height="785" Margin="39,88,-540,0" VerticalAlignment="Top" Width="501" Grid.ColumnSpan="2">
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBlock x:Name="AdministrationTextRole" HorizontalAlignment="Center" Text="Role" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0"/>
+            <TextBox x:Name="AdmininstrationEntryRole" HorizontalAlignment="Left" Text="Role" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="0"/>
+            <TextBlock x:Name="AdministrationTextNom" HorizontalAlignment="Center" Text="Nom" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1"/>
+            <TextBox x:Name="AdmininstrationEntryNom" HorizontalAlignment="Left" Text="Nom" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="1" />
+            <TextBlock x:Name="AdministrationTextPrenom" HorizontalAlignment="Center" Text="Prenom" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2"/>
+            <TextBox x:Name="AdmininstrationEntryPrenom" HorizontalAlignment="Left" Text="Prenom" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" />
 
+            <TextBlock x:Name="AdministrationTextAdressSEparation" HorizontalAlignment="Center" Text="Adresse" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" SelectionChanged="AdministrationTextAdressSEparation_SelectionChanged" />
+
+            <TextBlock x:Name="AdministrationTextAdressNumero" HorizontalAlignment="Center" Text="Numero" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="4"/>
+            <TextBox x:Name="AdmininstrationEntryAdressNumero" HorizontalAlignment="Left" Text="Numero" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="4" />
+            <TextBlock x:Name="AdministrationTextAdressRue" HorizontalAlignment="Center" Text="Prenom" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="5"/>
+            <TextBox x:Name="AdmininstrationEntryAdressRue" HorizontalAlignment="Left" Text="Prenom" VerticalAlignment="Center" Grid.Column="1" Grid.Row="5" />
+            <TextBlock x:Name="AdministrationTextAdressCodePostal" HorizontalAlignment="Center" Text="Code Postal" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="6"/>
+            <TextBox x:Name="AdmininstrationEntryAdressCodePostal" HorizontalAlignment="Left" Text="Code Postal" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="6" />
+            <TextBlock x:Name="AdministrationTextAdressVille" HorizontalAlignment="Center" Text="Ville" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="7"/>
+            <TextBox x:Name="AdmininstrationEntryAdressVille" HorizontalAlignment="Left" Text="Ville" VerticalAlignment="Center" Grid.Column="1" Grid.Row="7" />
+            <TextBlock x:Name="AdministrationTextAdressPays" HorizontalAlignment="Center" Text="Pays" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="8"/>
+            <TextBox x:Name="AdmininstrationEntryAdressPays" HorizontalAlignment="Left" Text="Pays" VerticalAlignment="Center" Grid.Column="1" Grid.Row="8" />
+
+
+            <TextBlock x:Name="AdministrationTextTelPerso" HorizontalAlignment="Center" Text="Numero de telephone perso" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="9"/>
+            <TextBox x:Name="AdmininstrationEntryTelPerso" HorizontalAlignment="Left" Text="Numero de telephone perso" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="9"/>
+            <TextBlock x:Name="AdministrationTextEmailPerso" HorizontalAlignment="Center" Text="Email perso" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="10"/>
+            <TextBox x:Name="AdmininstrationEntryEmailPerso" HorizontalAlignment="Left" Text="Email perso" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="10" />
+            <TextBlock x:Name="AdministrationTextDateNaissance" HorizontalAlignment="Center" Text="Date de naissance" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="11"/>
+            <DatePicker x:Name="AdministrationEntryDateNaissance" HorizontalAlignment="Left " VerticalAlignment="Center" Grid.Column="1" Grid.Row="11"/>
+            <TextBlock x:Name="AdministrationTextNumCompteBanc" HorizontalAlignment="Center" Text="Numero de compte bancaire" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="12"/>
+            <TextBox x:Name="AdmininstrationEntryNumCompteBanc" HorizontalAlignment="Left" Text="Numero de compte bancaire" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="12" />
+            <TextBlock x:Name="AdministrationTexEmailPro" HorizontalAlignment="Center" Text="Email pro" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="13"/>
+            <TextBox x:Name="AdmininstrationEntryEmailPro" HorizontalAlignment="Left" Text="Email pro" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="13" />
+            <TextBlock x:Name="AdministrationTextTelFixPro" HorizontalAlignment="Center" Text="Telephone fix pro" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="14"/>
+            <TextBox x:Name="AdmininstrationEntryTelFixPro" HorizontalAlignment="Left" Text="Telephone fix pro" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="14" />
+            <TextBlock x:Name="AdministrationTextTelMobPro" HorizontalAlignment="Center" Text="Telephone mobile pro" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="15"/>
+            <TextBox x:Name="AdmininstrationEntryTelMobPro" HorizontalAlignment="Left" Text="Telephone mobile pro" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="15" />
+            <TextBlock x:Name="AdministrationTextHoraires" HorizontalAlignment="Center" Text="Horaires" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="16"/>
+            <TextBox x:Name="AdmininstrationEntryHoraires" HorizontalAlignment="Left" Text="Horaires" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="16" />
+            <TextBlock x:Name="AdministrationTextContract" HorizontalAlignment="Center" Text="Contract" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="17"/>
+            <TextBox x:Name="AdmininstrationEntryContract" HorizontalAlignment="Left" Text="Contract" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="17" />
+            <TextBlock x:Name="AdministrationTextTypePoste" HorizontalAlignment="Center" Text="Type de poste" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="18"/>
+            <TextBox x:Name="AdmininstrationEntryTypePoste" HorizontalAlignment="Left" Text="Type de poste" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="18" />
+            <TextBlock x:Name="AdministrationTextSalaire" HorizontalAlignment="Center" Text="Salaire" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="19"/>
+            <TextBox x:Name="AdmininstrationEntrySalaire" HorizontalAlignment="Left" Text="Salaire" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="19" />
+            <TextBlock x:Name="AdministrationTextDateVirementSalaire" HorizontalAlignment="Center" Text="Date de virement de salaire" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="20"/>
+            <DatePicker x:Name="AdministrationEntryDateVirementSalaire" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" Grid.Row="20"/>
+            <TextBlock x:Name="AdministrationTextCongesRestant" HorizontalAlignment="Center" Text="Conges restant" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="21"/>
+            <TextBox x:Name="AdmininstrationEntryTelCongesRestant" HorizontalAlignment="Left" Text="Conges restant" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="21" />
+
+
+
+        </Grid>
+        <Button x:Name="AdministrationMainButton" Content="Admininstration" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="40,22,-106,0" VerticalAlignment="Top" Click="Button_Admininstration_Click"/>
+        <ListView x:Name="AdmininstrationListView" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="728" Margin="605,104,-960,0" VerticalAlignment="Top" Width="355" SelectionChanged="AdmininstrationListView_SelectionChanged"/>
+        <Button x:Name="EudiantsMainButton" Content="Etudiants" HorizontalAlignment="Left" Margin="180,22,0,0" VerticalAlignment="Top" Click="Button_Admininstration_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="ProfsMainButton" Content="Professeurs" HorizontalAlignment="Left" Margin="272,22,0,0" VerticalAlignment="Top" Click="Button_Admininstration_Click" Grid.ColumnSpan="2"/>
     </Grid>
 </Page>
