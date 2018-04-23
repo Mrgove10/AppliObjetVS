@@ -13,6 +13,7 @@ Adresse::Adresse(int numeroRue, string rue, string codePostal, string Ville, str
 	_Rue = rue;
 	_CodePostal = codePostal;
 	_Pays = pays;
+	_Ville = Ville;
 }
 
 
