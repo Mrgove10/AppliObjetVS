@@ -22,5 +22,9 @@ namespace AppObjetXaml
 		void TextBox_TextChanged(Platform::Object^ sender, Windows::UI::Xaml::Controls::TextChangedEventArgs^ e);
 		void TB1_SelectionChanged(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 		void Button_Admininstration_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void Button_Etudiant_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void Button_Professurs_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
+		void AdmininstrationAjoutFinal_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 	};
 }
+

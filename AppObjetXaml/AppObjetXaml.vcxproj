@@ -136,6 +136,14 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\AppObjetQT\Administration.h" />
+    <ClInclude Include="..\AppObjetQT\Adresse.h" />
+    <ClInclude Include="..\AppObjetQT\Autoentrepreneur.h" />
+    <ClInclude Include="..\AppObjetQT\Employe.h" />
+    <ClInclude Include="..\AppObjetQT\Etudiant.h" />
+    <ClInclude Include="..\AppObjetQT\ModuleCours.h" />
+    <ClInclude Include="..\AppObjetQT\Prof.h" />
+    <ClInclude Include="..\AppObjetQT\RelevéNotes.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h">
       <DependentUpon>App.xaml</DependentUpon>
@@ -168,6 +176,14 @@
     <Image Include="Assets\Wide310x150Logo.scale-200.png" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\AppObjetQT\Administration.cpp" />
+    <ClCompile Include="..\AppObjetQT\Adresse.cpp" />
+    <ClCompile Include="..\AppObjetQT\AutoEntrepreneur.cpp" />
+    <ClCompile Include="..\AppObjetQT\Employe.cpp" />
+    <ClCompile Include="..\AppObjetQT\Etudiant.cpp" />
+    <ClCompile Include="..\AppObjetQT\ModuleCours.cpp" />
+    <ClCompile Include="..\AppObjetQT\Prof.cpp" />
+    <ClCompile Include="..\AppObjetQT\RelevéNotes.cpp" />
     <ClCompile Include="App.xaml.cpp">
       <DependentUpon>App.xaml</DependentUpon>
     </ClCompile>

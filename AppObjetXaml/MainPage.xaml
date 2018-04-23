@@ -5,14 +5,13 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    RequestedTheme="Default">
+    RequestedTheme="Default" Height="900" Width="1600">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="1600" Height="899">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,0,0">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="279*"/>
-            <ColumnDefinition Width="1321*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Grid x:Name="GridAdmininstration" HorizontalAlignment="Left" Height="785" Margin="39,88,-540,0" VerticalAlignment="Top" Width="501" Grid.ColumnSpan="2">
+        <Grid x:Name="GridAdmininstration" HorizontalAlignment="Left" Height="689" Margin="39,88,-555,0" VerticalAlignment="Top" Width="516">
             <Grid.ColumnDefinitions >
                 <ColumnDefinition Width="Auto"/>
                 <ColumnDefinition Width="*"/>
@@ -40,7 +39,9 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+
             <TextBlock x:Name="AdministrationTextRole" HorizontalAlignment="Center" Text="Role" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0"/>
             <TextBox x:Name="AdmininstrationEntryRole" HorizontalAlignment="Left" Text="Role" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="0"/>
             <TextBlock x:Name="AdministrationTextNom" HorizontalAlignment="Center" Text="Nom" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1"/>
@@ -48,7 +49,7 @@
             <TextBlock x:Name="AdministrationTextPrenom" HorizontalAlignment="Center" Text="Prenom" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2"/>
             <TextBox x:Name="AdmininstrationEntryPrenom" HorizontalAlignment="Left" Text="Prenom" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" />
 
-            <TextBlock x:Name="AdministrationTextAdressSEparation" HorizontalAlignment="Center" Text="Adresse" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" SelectionChanged="AdministrationTextAdressSEparation_SelectionChanged" />
+            <TextBlock x:Name="AdministrationTextAdressSEparation" HorizontalAlignment="Center" Text="Adresse" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2"/>
 
             <TextBlock x:Name="AdministrationTextAdressNumero" HorizontalAlignment="Center" Text="Numero" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="4"/>
             <TextBox x:Name="AdmininstrationEntryAdressNumero" HorizontalAlignment="Left" Text="Numero" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="4" />
@@ -61,13 +62,12 @@
             <TextBlock x:Name="AdministrationTextAdressPays" HorizontalAlignment="Center" Text="Pays" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="8"/>
             <TextBox x:Name="AdmininstrationEntryAdressPays" HorizontalAlignment="Left" Text="Pays" VerticalAlignment="Center" Grid.Column="1" Grid.Row="8" />
 
-
             <TextBlock x:Name="AdministrationTextTelPerso" HorizontalAlignment="Center" Text="Numero de telephone perso" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="9"/>
             <TextBox x:Name="AdmininstrationEntryTelPerso" HorizontalAlignment="Left" Text="Numero de telephone perso" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="9"/>
             <TextBlock x:Name="AdministrationTextEmailPerso" HorizontalAlignment="Center" Text="Email perso" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="10"/>
             <TextBox x:Name="AdmininstrationEntryEmailPerso" HorizontalAlignment="Left" Text="Email perso" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="10" />
             <TextBlock x:Name="AdministrationTextDateNaissance" HorizontalAlignment="Center" Text="Date de naissance" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="11"/>
-            <DatePicker x:Name="AdministrationEntryDateNaissance" HorizontalAlignment="Left " VerticalAlignment="Center" Grid.Column="1" Grid.Row="11"/>
+            <DatePicker x:Name="AdministrationEntryDateNaissance" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" Grid.Row="11"/>
             <TextBlock x:Name="AdministrationTextNumCompteBanc" HorizontalAlignment="Center" Text="Numero de compte bancaire" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="12"/>
             <TextBox x:Name="AdmininstrationEntryNumCompteBanc" HorizontalAlignment="Left" Text="Numero de compte bancaire" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="12" />
             <TextBlock x:Name="AdministrationTexEmailPro" HorizontalAlignment="Center" Text="Email pro" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="13"/>
@@ -88,13 +88,30 @@
             <DatePicker x:Name="AdministrationEntryDateVirementSalaire" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="1" Grid.Row="20"/>
             <TextBlock x:Name="AdministrationTextCongesRestant" HorizontalAlignment="Center" Text="Conges restant" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="0" Grid.Row="21"/>
             <TextBox x:Name="AdmininstrationEntryTelCongesRestant" HorizontalAlignment="Left" Text="Conges restant" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="21" />
-
-
-
+            <Button x:Name="AdministrationAjoutFinal" Content="Ajouter" HorizontalAlignment="Center" VerticalAlignment="Center" Click="AdmininstrationAjoutFinal_Click"  Grid.Column="1" Grid.Row="22"/>
         </Grid>
-        <Button x:Name="AdministrationMainButton" Content="Admininstration" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="40,22,-106,0" VerticalAlignment="Top" Click="Button_Admininstration_Click"/>
-        <ListView x:Name="AdmininstrationListView" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="728" Margin="605,104,-960,0" VerticalAlignment="Top" Width="355" SelectionChanged="AdmininstrationListView_SelectionChanged"/>
-        <Button x:Name="EudiantsMainButton" Content="Etudiants" HorizontalAlignment="Left" Margin="180,22,0,0" VerticalAlignment="Top" Click="Button_Admininstration_Click" Grid.ColumnSpan="2"/>
-        <Button x:Name="ProfsMainButton" Content="Professeurs" HorizontalAlignment="Left" Margin="272,22,0,0" VerticalAlignment="Top" Click="Button_Admininstration_Click" Grid.ColumnSpan="2"/>
+        <Button x:Name="AdministrationMainButton" Content="Admininstration" HorizontalAlignment="Left" Margin="40,22,0,0" VerticalAlignment="Top" Click="Button_Admininstration_Click"/>
+        <Button x:Name="EudiantsMainButton" Content="Etudiants" HorizontalAlignment="Left" Margin="180,22,0,0" VerticalAlignment="Top" Click="Button_Etudiant_Click"/>
+        <Button x:Name="ProfsMainButton" Content="Professeurs" HorizontalAlignment="Left" Margin="272,22,0,0" VerticalAlignment="Top" Click="Button_Professurs_Click"/>
+
+        <!--
+        <ListView>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid>
+                        <Border Background="LightGray" Height="50" Width="50">
+                            <TextBlock Text="{Binding}" 
+                               FontSize="48" Foreground="Green"/>
+                        </Border>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            <ListView.Items>
+                <x:String>One</x:String>
+                <ListViewItem>Two</ListViewItem>
+            </ListView.Items>
+        </ListView>
+        -->
+
     </Grid>
 </Page>

@@ -13,7 +13,6 @@ namespace Windows {
             namespace Controls {
                 ref class Grid;
                 ref class Button;
-                ref class ListView;
                 ref class TextBlock;
                 ref class TextBox;
                 ref class DatePicker;
@@ -39,7 +38,6 @@ namespace AppObjetXaml
     
         private: ::Windows::UI::Xaml::Controls::Grid^ GridAdmininstration;
         private: ::Windows::UI::Xaml::Controls::Button^ AdministrationMainButton;
-        private: ::Windows::UI::Xaml::Controls::ListView^ AdmininstrationListView;
         private: ::Windows::UI::Xaml::Controls::Button^ EudiantsMainButton;
         private: ::Windows::UI::Xaml::Controls::Button^ ProfsMainButton;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextRole;
@@ -85,6 +83,7 @@ namespace AppObjetXaml
         private: ::Windows::UI::Xaml::Controls::DatePicker^ AdministrationEntryDateVirementSalaire;
         private: ::Windows::UI::Xaml::Controls::TextBlock^ AdministrationTextCongesRestant;
         private: ::Windows::UI::Xaml::Controls::TextBox^ AdmininstrationEntryTelCongesRestant;
+        private: ::Windows::UI::Xaml::Controls::Button^ AdministrationAjoutFinal;
     };
 }
 

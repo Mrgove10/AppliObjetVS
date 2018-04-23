@@ -16,11 +16,27 @@
     <ClCompile Include="App.xaml.cpp" />
     <ClCompile Include="MainPage.xaml.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="..\AppObjetQT\Administration.cpp" />
+    <ClCompile Include="..\AppObjetQT\Adresse.cpp" />
+    <ClCompile Include="..\AppObjetQT\AutoEntrepreneur.cpp" />
+    <ClCompile Include="..\AppObjetQT\Employe.cpp" />
+    <ClCompile Include="..\AppObjetQT\Etudiant.cpp" />
+    <ClCompile Include="..\AppObjetQT\ModuleCours.cpp" />
+    <ClCompile Include="..\AppObjetQT\Prof.cpp" />
+    <ClCompile Include="..\AppObjetQT\RelevéNotes.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h" />
     <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="..\AppObjetQT\Adresse.h" />
+    <ClInclude Include="..\AppObjetQT\Autoentrepreneur.h" />
+    <ClInclude Include="..\AppObjetQT\Employe.h" />
+    <ClInclude Include="..\AppObjetQT\Etudiant.h" />
+    <ClInclude Include="..\AppObjetQT\ModuleCours.h" />
+    <ClInclude Include="..\AppObjetQT\Prof.h" />
+    <ClInclude Include="..\AppObjetQT\RelevéNotes.h" />
+    <ClInclude Include="..\AppObjetQT\Administration.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png">
